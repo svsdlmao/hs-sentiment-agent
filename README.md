@@ -1,5 +1,8 @@
 # HK & KR social-sentiment n+1 price agent
 
+[![CI](https://github.com/svsdlmao/hs-sentiment-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/svsdlmao/hs-sentiment-agent/actions/workflows/ci.yml)
+[![daily agent run](https://github.com/svsdlmao/hs-sentiment-agent/actions/workflows/daily.yml/badge.svg)](https://github.com/svsdlmao/hs-sentiment-agent/actions/workflows/daily.yml)
+
 An agent that, every trading day, scrapes retail-investor chatter and news for **5 Hang Seng (HKEX) and 5 KOSPI (KRX)
 stocks**, scores sentiment in Cantonese, Chinese, Korean and English, aligns it with price bars in UTC, finds support and
 resistance, proposes a position, predicts the **next-session (n+1) close**, scores its own past forecasts, has a
