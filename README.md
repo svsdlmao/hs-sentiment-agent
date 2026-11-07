@@ -23,41 +23,46 @@ The bare ticker code is therefore what catches cashtag-style mentions, and Naver
 
 ---
 
-## Results from the sample run (2026-11-07)
+## Results from the Apify run (2026-11-07)
+
+Live report: **https://svsdlmao.github.io/hs-sentiment-agent/**. It is refreshed every weekday by the
+[daily workflow](.github/workflows/daily.yml).
 
 | | |
 |---|---|
-| Posts collected (10 days) | **98,849**: Naver 98,312 · Telegram 495 · LIHKG 41 |
-| News articles | 217 |
+| Apify run | `apify/cheerio-scraper` · run `vhuNiSIHsKRnbTT6I` · dataset `X9w6UTjTKOpgAodpX` · 221 start requests → 1,243 pages in 22 min |
+| Posts collected (10 days) | **98,877**: Naver 98,292 · Telegram 495 · LIHKG 90 |
+| News articles (Exa) | 236 (about 24 per asset, English plus local-language queries) |
 | Out-of-sample forecasts | 40 (10 tickers × 4 sessions, walk-forward) |
-| Crawl | local mode, earlier 176-request plan (before the KRX ticker-code Telegram searches were added) |
 
 | Model (walk-forward, out of sample) | MAE | Direction hit-rate |
 |---|---|---|
 | Random walk (tomorrow = today) | **3.69%** | – |
 | Price-only ridge | 3.74% | 35% (p = 0.08) |
-| Price + sentiment (this agent) | 3.93% | **55%** (p = 0.64) |
-| · HKEX only | 2.91% vs naive 2.83% | 70% |
-| · KRX only | 4.95% vs naive 4.54% | 40% |
+| Price + sentiment (this agent) | 3.96% | 52.5% (p = 0.87) |
+| · HKEX only | 2.93% vs naive 2.83% | **70%** (price-only 30%) |
+| · KRX only | 4.98% vs naive 4.54% | 35% (price-only 40%) |
 
-**How to read this.** On price error, nothing beats the random walk over 4 sessions, which is the normal result for
-daily stock returns. The sentiment layer improves direction calls over price-only (55% vs 35%), and HK sentiment called 7
-of 10 directions. However, 4 sessions in which stocks on one exchange move together is far too small a sample, and none of
-these numbers is statistically significant. The report shows them for that reason: it shows **what the agent can and
-cannot claim yet**. The live track record (below) is how that sample grows.
+**How to read this.** On price error nothing beats the random walk over 4 sessions, which is the normal result for
+daily stock returns. The sentiment layer does help on Hong Kong: it called 14 of 20 directions there, against 6 of 20 for
+price-only. It does not help on Korea, where the huge Naver boards are noisy and did not lead the moves in these
+sessions. Four sessions in which stocks on one exchange move together is far too small a sample, so none of this is
+statistically significant. The report shows these numbers anyway, because they are **what the agent can and cannot
+claim yet**. The live track record (below) is how that sample grows.
 
-Snapshot of the per-ticker view (the full version is in `outputs/report.html`):
+Snapshot of the per-ticker view (the full version is in the live report):
 
 | Ticker | Price | Mentions | Sentiment | n+1 | Position | Support / Resistance |
 |---|---|---|---|---|---|---|
-| 0700.HK Tencent | 419.8 | 65 | +0.21 Bullish | +1.5% | LONG | 411.1 / 438.8 |
-| 3690.HK Meituan | 80.4 | 89 | +0.11 Bullish | +1.2% | LONG | 73.9 / 84.8 |
-| 005930.KS Samsung | 188,700 | 45,861 | −0.13 Bearish | +0.9% | FLAT (model and crowd disagree) | 167,150 / 208,467 |
-| 000660.KS SK hynix | 1,132,000 | 42,181 | −0.07 Neutral | +1.3% | FLAT | 1,007,571 / 1,351,000 |
+| 0700.HK Tencent | 419.8 | 65 | +0.30 Bullish | +1.2% | LONG | 411.1 / 438.8 |
+| 3690.HK Meituan | 80.4 | 109 | +0.22 Bullish | +1.0% | LONG (low R:R, size down) | 74.0 / 84.8 |
+| 005930.KS Samsung | 188,700 | 45,849 | −0.15 Bearish | +1.4% | FLAT (model and crowd disagree) | 167,150 / 208,467 |
+| 000660.KS SK hynix | 1,132,000 | 42,171 | −0.01 Neutral | +1.8% | LONG | 1,007,571 / 1,351,000 |
 
 All ten forecasts are "Up". The price-only stage expects a rebound after the 6 Nov selloff, which is mean reversion
-learned from a year of history. Sentiment can only shift a forecast by up to 0.5 × daily volatility, so it decides the
-*position* (LONG only when the model and the crowd agree) more than the sign.
+learned from a year of history. Sentiment can only shift a forecast by up to 0.5 × daily volatility, so it mostly decides
+the *position*: a call needs the forecast to clear the noise threshold **and** the crowd must not be against it
+(Samsung's bearish board vetoes its LONG).
 
 ---
 
@@ -145,7 +150,7 @@ verified-holder badge. It is then adjusted for crowd agreement, so a bullish pos
   handling (만/萬) and kept only when at least 2 posts cite them within ±25% of the price. These are the levels retail
   traders are watching.
 
-**Position.** LONG or SHORT only when the forecast clears 0.25 × volatility **and** crowd sentiment agrees. Otherwise the
+**Position.** LONG or SHORT only when the forecast clears 0.25 × volatility **and** crowd sentiment is not against it. Otherwise the
 position is FLAT, with the reason shown. Each position comes with a stop at support or resistance, a target and the R:R.
 
 **Flags.** Buzz spike (mention z-score), crowded long, bullish divergence (crowd buying the dip) and bearish divergence.
@@ -212,8 +217,8 @@ with no one touching it. One-time setup:
 
 * **Ten days is a very short sample.** Stocks on one exchange move together, so the effective sample is closer to the
   number of sessions (4) than to the number of predictions (40). Treat the backtest as a sanity check, not as an edge.
-* **Coverage is uneven.** Naver is huge (98k posts), while HK retail chatter on LIHKG is small and the sample run
-  caught only 41 posts there. LIHKG blocks single IPs for about 24h after bursts, so the local crawler throttles to one
+* **Coverage is uneven.** Naver is huge (98k posts), while HK retail chatter on LIHKG is small (90 posts in the
+  Apify run). LIHKG blocks single IPs for about 24h after bursts, so the local crawler throttles to one
   request at a time and stops (circuit breaker); the Apify proxy avoids the ban by rotating IPs.
 * **Follower counts** exist only on Telegram (channel subscribers). LIHKG and Naver don't expose them, so engagement is
   used instead.
