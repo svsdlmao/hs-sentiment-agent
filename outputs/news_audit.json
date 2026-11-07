@@ -1,0 +1,122 @@
+[
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "0700.HK",
+    "query": "Tencent Holdings (0700.HK) stock news",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "0700.HK",
+    "query": "騰訊 股價",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "9988.HK",
+    "query": "Alibaba Group (9988.HK) stock news",
+    "results": 7
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "9988.HK",
+    "query": "阿里巴巴 股價",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "1810.HK",
+    "query": "Xiaomi Corp (1810.HK) stock news",
+    "results": 8
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "1810.HK",
+    "query": "小米 股價",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "3690.HK",
+    "query": "Meituan (3690.HK) stock news",
+    "results": 10
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "3690.HK",
+    "query": "美團 股價",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "1211.HK",
+    "query": "BYD Company (1211.HK) stock news",
+    "results": 7
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "1211.HK",
+    "query": "比亞迪 股價",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "005930.KS",
+    "query": "Samsung Electronics (005930.KS) stock news",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "005930.KS",
+    "query": "삼성전자 주가",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "000660.KS",
+    "query": "SK hynix (000660.KS) stock news",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "000660.KS",
+    "query": "하이닉스 주가",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "035420.KS",
+    "query": "NAVER Corp (035420.KS) stock news",
+    "results": 9
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "035420.KS",
+    "query": "네이버 주가",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "035720.KS",
+    "query": "Kakao Corp (035720.KS) stock news",
+    "results": 10
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "035720.KS",
+    "query": "카카오 주가",
+    "results": 12
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "005380.KS",
+    "query": "Hyundai Motor (005380.KS) stock news",
+    "results": 10
+  },
+  {
+    "provider": "google_news_rss_fallback",
+    "ticker": "005380.KS",
+    "query": "현대차 주가",
+    "results": 12
+  }
+]

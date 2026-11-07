@@ -1,0 +1,59 @@
+# The agent runs itself: every weekday after both markets close it scrapes (Apify), pulls news (Exa),
+# scores the previous forecasts against the real closes, makes new n+1 forecasts, has the analyst agent
+# write the brief, commits the track record and publishes the report to GitHub Pages.
+#
+# Setup (once): repo Settings -> Secrets and variables -> Actions -> add APIFY_TOKEN, EXA_API_KEY
+# (ANTHROPIC_API_KEY optional, enables the Claude analyst). Settings -> Pages -> Source: GitHub Actions.
+name: daily-agent-run
+
+on:
+  schedule:
+    - cron: "45 9 * * 1-5"   # 09:45 UTC = after HKEX (08:00 UTC) and KRX (06:30 UTC) closes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-agent-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt anthropic
+      - name: Run pipeline (Apify + Exa + analyst agent)
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m hsagent run --mode apify
+      - name: Commit track record
+        run: |
+          git config user.name "hsagent-bot"
+          git config user.email "hsagent-bot@users.noreply.github.com"
+          for f in outputs/predictions_log.csv outputs/prediction_check.csv outputs/summary.json \
+                   outputs/backtest_metrics.csv outputs/apify_runs.json outputs/news_audit.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+          git commit -m "daily run $(date -u +%Y-%m-%d)" || echo "nothing to commit"
+          git push
+      - name: Prepare Pages site
+        run: mkdir -p site && cp outputs/report.html site/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

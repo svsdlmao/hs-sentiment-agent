@@ -1,0 +1,7 @@
+{
+  "name": "hsagent-pagefunction-tests",
+  "private": true,
+  "type": "module",
+  "description": "Dev-only harness that runs apify/page_function.js locally for the parity test.",
+  "dependencies": { "cheerio": "1.0.0" }
+}

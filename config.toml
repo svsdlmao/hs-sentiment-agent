@@ -1,0 +1,100 @@
+# HengSeng / KRX social-sentiment price-prediction agent — run configuration.
+# Every value here can be changed without touching code.
+
+[run]
+lookback_days = 10          # social + news window (task: "last 10 days")
+price_history_days = 365    # daily bars used for technical levels and the price-only base model
+output_dir = "outputs"
+
+[apify]
+# Official Apify actor. All social pages AND the price bars are fetched through it.
+actor_id = "apify/cheerio-scraper"
+# [] = Apify datacenter proxy. Use ["RESIDENTIAL"] if a site starts blocking datacenter IPs.
+proxy_groups = []
+max_concurrency = 8
+memory_mbytes = 1024
+timeout_secs = 1800
+
+[exa]
+num_results = 12
+max_characters = 1200
+
+[limits]
+naver_page_size = 100       # posts per Naver API page (max 100)
+naver_max_pages = 900       # per ticker; Samsung/SK hynix boards need ~750 pages for 10 days. Capped boards are flagged in the report
+lihkg_max_search_pages = 3  # 30 threads per page
+lihkg_threads_per_page = 12 # most-replied threads per search page whose replies are fetched
+telegram_max_pages = 4      # 20 messages per page, per channel x keyword
+
+# ---------------------------------------------------------------------------
+# Exchanges. Each one uses two different social sources from the task list.
+# ---------------------------------------------------------------------------
+
+[[exchanges]]
+code = "HKEX"
+name = "Hong Kong Exchange (Hang Seng)"
+tz = "Asia/Hong_Kong"
+close_local = "16:00"
+index_symbol = "^HSI"
+sources = ["lihkg", "telegram"]
+# Public channels with a web preview at https://t.me/s/<name>; searched per keyword.
+telegram_channels = ["hkej_news", "mingpao_news", "reuterszh", "jin10data"]
+
+  [[exchanges.assets]]
+  ticker = "0700.HK"
+  name = "Tencent Holdings"
+  keywords = ["騰訊", "腾讯", "00700"]
+
+  [[exchanges.assets]]
+  ticker = "9988.HK"
+  name = "Alibaba Group"
+  keywords = ["阿里巴巴", "阿里", "09988"]
+
+  [[exchanges.assets]]
+  ticker = "1810.HK"
+  name = "Xiaomi Corp"
+  keywords = ["小米", "01810"]
+
+  [[exchanges.assets]]
+  ticker = "3690.HK"
+  name = "Meituan"
+  keywords = ["美團", "美团", "03690"]
+
+  [[exchanges.assets]]
+  ticker = "1211.HK"
+  name = "BYD Company"
+  keywords = ["比亞迪", "比亚迪", "01211"]
+
+[[exchanges]]
+code = "KRX"
+name = "Korea Exchange (KOSPI)"
+tz = "Asia/Seoul"
+close_local = "15:30"
+index_symbol = "^KS11"
+sources = ["naver", "telegram"]
+telegram_channels = ["hedgecat0301", "YeouidoStory2", "bornlupin", "corevalue", "sejongdata2013", "hanaresearch", "kiwoom_semibat", "companyreport", "ehdwl"]
+
+  [[exchanges.assets]]
+  ticker = "005930.KS"
+  name = "Samsung Electronics"
+  keywords = ["삼성전자", "삼전"]
+
+  [[exchanges.assets]]
+  ticker = "000660.KS"
+  name = "SK hynix"
+  keywords = ["하이닉스", "SK하이닉스"]
+
+  [[exchanges.assets]]
+  ticker = "035420.KS"
+  name = "NAVER Corp"
+  keywords = ["네이버", "NAVER"]
+
+  [[exchanges.assets]]
+  ticker = "035720.KS"
+  name = "Kakao Corp"
+  keywords = ["카카오"]
+
+  [[exchanges.assets]]
+  ticker = "005380.KS"
+  name = "Hyundai Motor"
+  keywords = ["현대차", "현대자동차"]

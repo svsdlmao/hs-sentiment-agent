@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+# large, regenerated every run
+outputs/raw/
+outputs/posts.csv
