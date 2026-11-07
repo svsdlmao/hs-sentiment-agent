@@ -1,0 +1,17 @@
+[
+  {
+    "mode": "apify",
+    "actor_id": "apify/cheerio-scraper",
+    "actor_actId": "YrQuEkowkNCLdk4j2",
+    "run_id": "vhuNiSIHsKRnbTT6I",
+    "dataset_id": "X9w6UTjTKOpgAodpX",
+    "status": "SUCCEEDED",
+    "started_at": "2026-11-07T18:17:48.463Z",
+    "finished_at": "2026-11-07T18:39:21.102Z",
+    "requests_finished": null,
+    "requests_failed": null,
+    "console_url": "https://console.apify.com/view/runs/vhuNiSIHsKRnbTT6I",
+    "items": 1243,
+    "logged_at": "2026-11-07T18:39:28.393920+00:00"
+  }
+]
