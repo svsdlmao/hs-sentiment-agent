@@ -69,17 +69,50 @@ def ingest(cfg: Config, mode: str, dataset_id: str | None = None, records_path: 
     return records, info
 
 
-def ensure_prices(cfg: Config, records: list[dict]) -> tuple[pd.DataFrame, dict]:
+def last_completed_session(ex, now_utc: datetime) -> pd.Timestamp:
+    """Most recent weekday whose close (+30 min for the data vendor to settle) is before now."""
+    local = now_utc.astimezone(ex.zone)
+    d = local.date()
+    settled = (datetime.combine(d, ex.close_time, tzinfo=ex.zone) + timedelta(minutes=30)) <= local
+    if d.weekday() >= 5 or not settled:
+        d -= timedelta(days=1)
+    while d.weekday() >= 5:
+        d -= timedelta(days=1)
+    return pd.Timestamp(d)
+
+
+def stale_tickers(prices: pd.DataFrame, cfg: Config) -> set[str]:
+    """Tickers whose latest bar is older than the last completed session (holidays give a harmless refetch)."""
+    out = set()
+    if prices.empty:
+        return out
+    latest = prices.groupby("ticker")["date"].max()
+    for ex in cfg.exchanges:
+        want = last_completed_session(ex, cfg.now_utc)
+        syms = [a.ticker for a in ex.assets] + ([ex.index_symbol] if ex.index_symbol else [])
+        out |= {t for t in syms if t in latest and latest[t] < want}
+    return out
+
+
+def ensure_prices(cfg: Config, records: list[dict], refresh_stale: bool = True) -> tuple[pd.DataFrame, dict]:
     prices, meta = parsers.records_to_prices(records, cfg.exchanges)
     wanted = {a.ticker for a in cfg.all_assets()} | {e.index_symbol for e in cfg.exchanges if e.index_symbol}
     have = set(prices["ticker"]) if not prices.empty else set()
     missing = wanted - have
-    if missing:
-        log.warning("price bars missing from the crawl for %s; fetching them directly", sorted(missing))
-        extra = [r for r in plan_mod.yahoo_requests(cfg) if r["userData"]["ticker"] in missing]
+    # A crawl can return a stale chart (seen once: an evening run got bars only up to the previous Friday),
+    # which would silently skip a session. Refetch those symbols directly and keep the newest bars.
+    stale = stale_tickers(prices, cfg) if refresh_stale else set()
+    if missing or stale:
+        log.warning("price bars missing %s / stale %s in the crawl; fetching them directly",
+                    sorted(missing), sorted(stale))
+        extra = [r for r in plan_mod.yahoo_requests(cfg) if r["userData"]["ticker"] in missing | stale]
         p2, m2 = parsers.records_to_prices(local_crawler.crawl(extra), cfg.exchanges)
         prices = pd.concat([prices, p2], ignore_index=True)
+        prices = prices.drop_duplicates(["ticker", "date"], keep="last").sort_values(["ticker", "date"])
         meta.update(m2)
+        still = stale_tickers(prices, cfg) if refresh_stale else set()
+        if still:
+            log.warning("still no bar for the last completed session for %s (holiday?)", sorted(still))
     prices = prices[prices["close_utc"] <= pd.Timestamp(cfg.now_utc)]  # drop the in-progress session
     return prices.reset_index(drop=True), meta
 
@@ -117,7 +150,7 @@ def run(cfg: Config, mode: str = "apify", scorer: str = "lexicon", with_news: bo
         dataset_id: str | None = None, records_path: list[str] | None = None, analyst: str = "auto") -> dict:
     out = cfg.output_dir
     records, ingest_info = ingest(cfg, mode, dataset_id, records_path)
-    prices, meta = ensure_prices(cfg, records)
+    prices, meta = ensure_prices(cfg, records, refresh_stale=(mode != "cached"))
     names = {a.ticker: a.name for a in cfg.all_assets()}
 
     # social posts
