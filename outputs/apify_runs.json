@@ -58,5 +58,20 @@
     "console_url": "https://console.apify.com/view/runs/tqlGVpOg0Z6paYItx",
     "items": 1202,
     "logged_at": "2026-11-11T17:51:52.348640+00:00"
+  },
+  {
+    "mode": "apify",
+    "actor_id": "apify/cheerio-scraper",
+    "actor_actId": "YrQuEkowkNCLdk4j2",
+    "run_id": "BmHxDF3f4zdLsnzP4",
+    "dataset_id": "jg89c7EOdXWc5yyJ4",
+    "status": "SUCCEEDED",
+    "started_at": "2026-11-12T16:37:43.359Z",
+    "finished_at": "2026-11-12T16:56:42.304Z",
+    "requests_finished": null,
+    "requests_failed": null,
+    "console_url": "https://console.apify.com/view/runs/BmHxDF3f4zdLsnzP4",
+    "items": 1233,
+    "logged_at": "2026-11-12T16:56:49.352060+00:00"
   }
 ]
