@@ -84,7 +84,7 @@ python -m hsagent run       # Apify + Exa + analyst agent, ~10-15 min, writes ou
 | `python -m hsagent ask "why is Samsung FLAT?"` | ask the analyst agent about the last run; it answers from tool calls |
 | `python -m hsagent check` | score every logged n+1 forecast against the closes that printed since |
 | `python -m hsagent plan --actor-input` | print the exact Apify actor input JSON |
-| `python -m pytest -q` | 20 tests (the JS parity tests run after `npm ci --prefix tests/js`) |
+| `python -m pytest -q` | 21 tests (the JS parity tests run after `npm ci --prefix tests/js`) |
 
 ## Apify and Exa usage (for reproduction)
 

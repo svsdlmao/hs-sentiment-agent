@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import html as htmlmod
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -153,6 +153,30 @@ def records_to_posts(records: list[dict], cutoff_utc: datetime | None = None) ->
     return df
 
 
+def _meta_bar(m: dict, ud: dict, zone, close_t, last: dict | None) -> dict | None:
+    """Rebuild the last finished session's bar from the chart meta when the bars omit it.
+
+    Yahoo drops the previous session's bar from the daily series for some hours after local midnight
+    (seen at 17:40-20:10 UTC) while `meta` still carries that session's close, high, low and volume.
+    Only used when the meta print is at/after the session close and newer than the last bar.
+    """
+    t, px = m.get("regularMarketTime"), m.get("regularMarketPrice")
+    if not t or px is None:
+        return None
+    local = datetime.fromtimestamp(t, timezone.utc).astimezone(zone)
+    session_close = datetime.combine(local.date(), close_t, tzinfo=zone)
+    if local < session_close - timedelta(minutes=10):            # intraday print: session not finished
+        return None
+    d = pd.Timestamp(local.date())
+    if last is not None and last["date"] >= d:
+        return None
+    prev = last["close"] if last is not None else m.get("chartPreviousClose") or px
+    return dict(ticker=ud["ticker"], exchange=ud["exchange"], date=d, close_utc=session_close.astimezone(timezone.utc),
+                open=prev, high=m.get("regularMarketDayHigh") or max(prev, px),
+                low=m.get("regularMarketDayLow") or min(prev, px), close=px,
+                volume=m.get("regularMarketVolume") or 0)
+
+
 def records_to_prices(records: list[dict], exchanges) -> tuple[pd.DataFrame, dict]:
     """Daily bars + per-symbol meta (name, currency, last price) from Yahoo chart payloads."""
     close_times = {e.code: (e.zone, e.close_time) for e in exchanges}
@@ -170,14 +194,19 @@ def records_to_prices(records: list[dict], exchanges) -> tuple[pd.DataFrame, dic
         meta[ud["ticker"]] = {"currency": m.get("currency"), "name": m.get("longName") or m.get("shortName"),
                               "regular_market_price": m.get("regularMarketPrice"),
                               "regular_market_time": m.get("regularMarketTime")}
+        sym_rows = []
         for i, ts in enumerate(res["timestamp"]):
             if q["close"][i] is None:
                 continue
             d = datetime.fromtimestamp(ts, timezone.utc).astimezone(zone).date()
             close_utc = datetime.combine(d, close_t, tzinfo=zone).astimezone(timezone.utc)
-            rows.append(dict(ticker=ud["ticker"], exchange=ud["exchange"], date=pd.Timestamp(d), close_utc=close_utc,
-                             open=q["open"][i], high=q["high"][i], low=q["low"][i], close=q["close"][i],
-                             volume=q["volume"][i] or 0))
+            sym_rows.append(dict(ticker=ud["ticker"], exchange=ud["exchange"], date=pd.Timestamp(d), close_utc=close_utc,
+                                 open=q["open"][i], high=q["high"][i], low=q["low"][i], close=q["close"][i],
+                                 volume=q["volume"][i] or 0))
+        bar = _meta_bar(m, ud, zone, close_t, sym_rows[-1] if sym_rows else None)
+        if bar:
+            sym_rows.append(bar)
+        rows += sym_rows
     df = pd.DataFrame(rows)
     if not df.empty:
         df["close_utc"] = pd.to_datetime(df["close_utc"], utc=True)

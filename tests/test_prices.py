@@ -55,3 +55,33 @@ def test_stale_tickers_and_refetch(monkeypatch):
     fetched.clear()
     pipeline.ensure_prices(cfg, [], refresh_stale=False)                    # cached mode: never refetch
     assert not fetched
+
+
+def _yahoo(bar_days, meta_utc, price=398.8):
+    """Fake HK chart payload: daily bars stamped 01:30 UTC (09:30 HKT) plus a meta block."""
+    ts = [int(datetime(2026, 11, d, 1, 30, tzinfo=timezone.utc).timestamp()) for d in bar_days]
+    n = len(ts)
+    meta = {"currency": "HKD", "regularMarketTime": int(meta_utc.timestamp()), "regularMarketPrice": price,
+            "regularMarketDayHigh": 405.8, "regularMarketDayLow": 395.8, "regularMarketVolume": 25847007,
+            "chartPreviousClose": 430.4}
+    res = {"meta": meta, "timestamp": ts, "indicators": {"quote": [{
+        "open": [410.0] * n, "high": [412.0] * n, "low": [405.0] * n, "close": [409.6] * n, "volume": [1] * n}]}}
+    return [{"userData": {"kind": "yahoo_daily", "exchange": "HKEX", "ticker": "0700.HK"},
+             "payload": {"chart": {"result": [res]}}}]
+
+
+def test_meta_fills_session_missing_from_bars():
+    from hsagent.ingest.parsers import records_to_prices
+    cfg = load_config()
+    # evening gap: bars stop at Nov 10, meta already printed Nov 11's close (16:08 HKT)
+    p, _ = records_to_prices(_yahoo([9, 10], datetime(2026, 11, 11, 8, 8, tzinfo=timezone.utc)), cfg.exchanges)
+    last = p.iloc[-1]
+    assert last["date"] == pd.Timestamp("2026-11-11") and last["close"] == 398.8
+    assert last["high"] == 405.8 and last["low"] == 395.8 and last["open"] == 409.6
+    assert last["close_utc"] == pd.Timestamp("2026-11-11 08:00", tz="UTC")
+    # normal case: the bar is already there -> nothing added
+    p, _ = records_to_prices(_yahoo([10, 11], datetime(2026, 11, 11, 8, 8, tzinfo=timezone.utc)), cfg.exchanges)
+    assert len(p) == 2
+    # intraday print (11:00 HKT): session not finished -> no synthetic bar
+    p, _ = records_to_prices(_yahoo([10, 11], datetime(2026, 11, 12, 3, 0, tzinfo=timezone.utc)), cfg.exchanges)
+    assert p["date"].max() == pd.Timestamp("2026-11-11")
