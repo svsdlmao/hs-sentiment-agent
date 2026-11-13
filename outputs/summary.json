@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-11-12T17:45:39.113412+00:00",
-  "cutoff_utc": "2026-11-02T17:45:39.113412+00:00",
+  "generated_at": "2026-11-13T17:24:10.112816+00:00",
+  "cutoff_utc": "2026-11-03T17:24:10.112816+00:00",
   "lookback_days": 10,
   "scorer": "lexicon",
   "ingest": {
     "mode": "apify",
     "actor_id": "apify/cheerio-scraper",
     "actor_actId": "YrQuEkowkNCLdk4j2",
-    "run_id": "SEMFex5Nb6yMTXhcv",
-    "dataset_id": "1IhStDtu8gw3gNjyU",
+    "run_id": "BlKgLIZXS8jgGUuI8",
+    "dataset_id": "iAbWL0kHqVRf8HZ15",
     "status": "SUCCEEDED",
-    "started_at": "2026-11-12T17:45:40.734Z",
-    "finished_at": "2026-11-12T18:07:08.055Z",
+    "started_at": "2026-11-13T17:24:11.729Z",
+    "finished_at": "2026-11-13T17:43:47.936Z",
     "requests_finished": null,
     "requests_failed": null,
-    "console_url": "https://console.apify.com/view/runs/SEMFex5Nb6yMTXhcv",
-    "items": 1233,
-    "records_path": "/home/runner/work/hs-sentiment-agent/hs-sentiment-agent/outputs/raw/records_20261112T174539Z.json.gz",
-    "records": 1233
+    "console_url": "https://console.apify.com/view/runs/BlKgLIZXS8jgGUuI8",
+    "items": 1245,
+    "records_path": "/home/runner/work/hs-sentiment-agent/hs-sentiment-agent/outputs/raw/records_20261113T172410Z.json.gz",
+    "records": 1245
   },
   "news_provider": "exa",
   "exchanges": [
@@ -56,80 +56,80 @@
     }
   ],
   "counts": {
-    "posts": 97578,
-    "news": 237,
+    "posts": 98720,
+    "news": 238,
     "posts_by_source": [
       {
         "exchange": "HKEX",
         "source": "lihkg",
-        "n": 131
+        "n": 154
       },
       {
         "exchange": "HKEX",
         "source": "telegram",
-        "n": 308
+        "n": 315
       },
       {
         "exchange": "KRX",
         "source": "naver",
-        "n": 96972
+        "n": 98083
       },
       {
         "exchange": "KRX",
         "source": "telegram",
-        "n": 167
+        "n": 168
       }
     ]
   },
   "coverage": {
     "000660.KS|naver": {
-      "oldest": "2026-11-02T17:45:41+00:00",
-      "posts": 42980,
+      "oldest": "2026-11-03T17:40:40+00:00",
+      "posts": 43641,
       "complete": true
     },
     "000660.KS|telegram": {
-      "oldest": "2026-11-02T21:34:18+00:00",
-      "posts": 47,
+      "oldest": "2026-11-03T21:22:46+00:00",
+      "posts": 44,
       "complete": true
     },
     "005380.KS|naver": {
-      "oldest": "2026-11-02T18:04:40+00:00",
-      "posts": 4614,
+      "oldest": "2026-11-03T17:39:34+00:00",
+      "posts": 4421,
       "complete": true
     },
     "005380.KS|telegram": {
       "oldest": "2026-11-03T23:54:03+00:00",
-      "posts": 15,
+      "posts": 16,
       "complete": true
     },
     "005930.KS|naver": {
-      "oldest": "2026-11-02T17:46:12+00:00",
-      "posts": 41919,
+      "oldest": "2026-11-03T17:43:26+00:00",
+      "posts": 41874,
       "complete": true
     },
     "005930.KS|telegram": {
-      "oldest": "2026-11-02T23:41:17+00:00",
-      "posts": 40,
+      "oldest": "2026-11-05T00:04:36+00:00",
+      "posts": 41,
       "complete": true
     },
     "035420.KS|naver": {
-      "oldest": "2026-11-02T19:33:46+00:00",
-      "posts": 5772,
+      "oldest": "2026-11-03T19:46:27+00:00",
+      "posts": 6597,
       "complete": true
     },
     "035420.KS|telegram": {
-      "oldest": "2026-11-03T03:50:31+00:00",
-      "posts": 61,
+      "oldest": "2026-11-04T00:12:56+00:00",
+      "posts": 62,
       "complete": true
     },
     "035720.KS|naver": {
-      "oldest": "2026-11-02T22:39:07+00:00",
-      "posts": 1687,
+      "oldest": "2026-11-03T17:27:25+00:00",
+      "posts": 1550,
       "complete": true
     },
     "035720.KS|telegram": {
       "oldest": "2026-11-05T07:02:14+00:00",
-      "posts": 4,
+      "posts": 5,
       "complete": true
     },
     "0700.HK|lihkg": {
@@ -139,7 +139,7 @@
     },
     "0700.HK|telegram": {
       "oldest": "2026-11-04T00:14:30+00:00",
-      "posts": 62,
+      "posts": 65,
       "complete": true
     },
     "1211.HK|lihkg": {
@@ -148,18 +148,18 @@
       "complete": true
     },
     "1211.HK|telegram": {
-      "oldest": "2026-11-03T04:46:11+00:00",
-      "posts": 32,
+      "oldest": "2026-11-04T04:30:57+00:00",
+      "posts": 29,
       "complete": true
     },
     "1810.HK|lihkg": {
       "oldest": "2026-11-09T06:11:06+00:00",
-      "posts": 21,
+      "posts": 44,
       "complete": true
     },
     "1810.HK|telegram": {
       "oldest": "2026-11-04T01:34:24+00:00",
-      "posts": 55,
+      "posts": 57,
       "complete": true
     },
     "3690.HK|lihkg": {
@@ -168,8 +168,8 @@
       "complete": true
     },
     "3690.HK|telegram": {
-      "oldest": "2026-11-03T01:06:20+00:00",
-      "posts": 85,
+      "oldest": "2026-11-04T01:14:13+00:00",
+      "posts": 88,
       "complete": true
     },
     "9988.HK|lihkg": {
@@ -179,7 +179,7 @@
     },
     "9988.HK|telegram": {
       "oldest": "2026-11-04T01:01:53+00:00",
-      "posts": 74,
+      "posts": 76,
       "complete": true
     }
   },
@@ -189,35 +189,35 @@
       "name": "Tencent Holdings",
       "exchange": "HKEX",
       "currency": "HKD",
-      "price": 398.8,
-      "price_date": "2026-11-12",
-      "ret_1d": -0.026721050538776048,
-      "ret_5d": -0.07625495657886106,
-      "mentions": 81,
+      "price": 386.6,
+      "price_date": "2026-11-13",
+      "ret_1d": -0.03106944070404616,
+      "ret_5d": -0.0823878115340948,
+      "mentions": 84,
       "mentions_by_source": {
         "lihkg": 19,
-        "telegram": 62
+        "telegram": 65
       },
       "sent_by_source": {
         "lihkg": -0.1281459984396115,
-        "telegram": 0.10229909376481638
+        "telegram": 0.059006155268582126
       },
-      "engagement": 165.03855002048638,
-      "sentiment_social": 0.05322574457813241,
-      "sentiment_news": 0.05681319565628707,
-      "sentiment_score": 0.054122607347671076,
+      "engagement": 174.18693640442294,
+      "sentiment_social": 0.021245207744464353,
+      "sentiment_news": 0.09304879758648196,
+      "sentiment_score": 0.03919610520496876,
       "sentiment_label": "Neutral",
-      "sentiment_momentum": -0.17422187527047245,
-      "after_close_posts": 2,
-      "after_close_sentiment": 0.0,
-      "news_count": 24,
-      "mention_z": 0.6954937633942033,
-      "pred_session": "2026-11-13",
-      "pred_close": 398.18547556975176,
-      "pred_ret": -0.0015421223369081784,
-      "pred_ret_price_only": 0.0027068856745471586,
-      "pred_low_68": 387.03363535283336,
-      "pred_high_68": 409.6586406764573,
+      "sentiment_momentum": -0.26935722984897625,
+      "after_close_posts": 4,
+      "after_close_sentiment": 0.09498724056380622,
+      "news_count": 23,
+      "mention_z": -0.5252402973380813,
+      "pred_session": "2026-11-16",
+      "pred_close": 386.09502844263216,
+      "pred_ret": -0.001307039933399714,
+      "pred_ret_price_only": 0.000831074603810054,
+      "pred_low_68": 374.5659349442778,
+      "pred_high_68": 397.9789860236309,
       "direction": "Flat",
       "position": "FLAT",
       "reason": "predicted move below noise",
@@ -226,14 +226,14 @@
       "target": null,
       "rr": null,
       "levels": {
-        "price": 398.8,
-        "atr": 12.057143293108258,
+        "price": 386.6,
+        "atr": 12.58571341378348,
         "pivots": {
-          "P": 400.1333333333334,
-          "R1": 404.46666666666675,
-          "S1": 394.46666666666675,
-          "R2": 410.1333333333334,
-          "S2": 390.1333333333334
+          "P": 389.1333333333334,
+          "R1": 392.66666666666674,
+          "S1": 383.0666666666668,
+          "R2": 398.73333333333335,
+          "S2": 379.5333333333334
         },
         "poc": 423.07249908447267,
         "support": 376.6000061035156,
@@ -244,42 +244,42 @@
           {
             "price": 438.2000020345052,
             "touches": 12,
-            "strength": 13.94413407821229
+            "strength": 13.932960893854748
           },
           {
             "price": 481.34285627092635,
             "touches": 7,
-            "strength": 8.016759776536313
+            "strength": 8.005586592178771
           },
           {
             "price": 460.8000030517578,
             "touches": 4,
-            "strength": 5.608938547486034
+            "strength": 5.597765363128492
           },
           {
             "price": 419.59999593098956,
             "touches": 3,
-            "strength": 4.58659217877095
+            "strength": 4.575418994413408
           },
           {
             "price": 497.13332112630206,
             "touches": 3,
-            "strength": 4.229050279329609
+            "strength": 4.217877094972067
           },
           {
             "price": 376.6000061035156,
             "touches": 2,
-            "strength": 3.899441340782123
+            "strength": 3.888268156424581
           },
           {
             "price": 411.1000061035156,
             "touches": 2,
-            "strength": 3.7318435754189947
+            "strength": 3.7206703910614527
           },
           {
             "price": 520.8333333333334,
             "touches": 3,
-            "strength": 3.4134078212290504
+            "strength": 3.4022346368715084
           }
         ],
         "crowd_levels": [
@@ -336,68 +336,68 @@
           },
           {
             "source": "telegram",
+            "ts": "2026-11-13 05:05",
+            "score": -0.83,
+            "text": "港股午后走低，恒指跌超1%，恒生科技指数跌超2%，科网股下挫，腾讯控股(00700.HK)跌超3%。",
+            "url": "https://t.me/jin10data/1486410",
+            "w": 3.5
+          },
+          {
+            "source": "telegram",
             "ts": "2026-11-06 01:24",
             "score": -0.83,
             "text": "港股科网股集体低开，百度(09888.HK)开跌4.77%，阿里巴巴(09988.HK)开跌3.76%，腾讯控股(00700.HK)、京东(09618.HK)等多股开跌。",
             "url": "https://t.me/jin10data/1479507",
             "w": 3.4
-          },
-          {
-            "source": "telegram",
-            "ts": "2026-11-06 07:35",
-            "score": -0.83,
-            "text": "港股科网股午后震荡走弱，阿里巴巴(09988.HK)跌近5%，小米集团(01810.HK)、腾讯控股(00700.HK)跌超3%，快手(01024.HK)、京东(09618.HK)等跟跌。",
-            "url": "https://t.me/jin10data/1479832",
-            "w": 3.3
           }
         ]
       },
       "news": [
         {
-          "title": "Tencent Stocks Slip 2% as U.S. Remote Chip Rule Threatens AI Com",
-          "url": "https://www.gurufocus.com/news/9194983/tencent-stocks-slip-2-as-us-remote-chip-rule-threatens-ai-compute-access",
-          "ts": "2026-11-12",
-          "score": -0.83,
+          "title": "Understanding the Market | TENCENT Falls Over 3%, Cumulative… | Longbridge",
+          "url": "https://longbridge.com/news/305419336",
+          "ts": "2026-11-13",
+          "score": -0.99,
           "provider": "exa"
         },
         {
-          "title": "Pony Ma is willing to move half of Tencent's staff to AI businesses",
-          "url": "https://qz.com/tencent-pony-ma-half-workforce-ai-native-111226",
-          "ts": "2026-11-12",
-          "score": -0.76,
+          "title": "港股异动 | 腾讯控股(00700)跌超3% 近六日股价累计跌超10% 下周将披露三季报_大风号_凤凰网",
+          "url": "https://feng.ifeng.com/c/8y1EFfRYBgz",
+          "ts": "2026-11-13",
+          "score": -0.99,
           "provider": "exa"
         },
         {
-          "title": "Tencent Holdings Ltd.-Aktie: Pony Ma richtet Hälfte auf KI aus",
-          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/tencent-holdings-ltd-aktie-pony-ma-richtet-haelfte-auf-ki-aus/70496650",
-          "ts": "2026-11-12",
-          "score": 0.0,
+          "title": "港股异动 | 腾讯控股(00700)跌超3% 近六日股价累计跌超10% 下周将披露三季报",
+          "url": "https://news.futunn.com/post/1004416757/hk-stocks-in-focus-tencent-00700-drops-over-3-shares",
+          "ts": "2026-11-13",
+          "score": -1.0,
           "provider": "exa"
         },
         {
-          "title": "Source familiar with Tencent denies rumors of 50% workforce lay-off, saying company management remarks are misinterpreted - Global Times",
-          "url": "https://www.globaltimes.cn/page/202611/1374158.shtml",
-          "ts": "2026-11-12",
-          "score": 0.66,
+          "title": "港股異動 | 騰訊控股(00700)跌超3% 近六日股價累計跌超10% 下週將披露三季報 作者 智通財經",
+          "url": "https://hk.investing.com/news/stock-market-news/article-1756884",
+          "ts": "2026-11-13",
+          "score": -0.99,
           "provider": "exa"
         },
         {
-          "title": "Tencent stock faces new AI chip-access risk before results",
-          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/tencent-stock-faces-new-ai-chip-access-risk-before-results/70496242",
-          "ts": "2026-11-12",
-          "score": 0.0,
+          "title": "騰訊跑輸  市場料季度盈利跌 8.7% 馬化騰要求員工適應 AI｜長橋證券",
+          "url": "https://longbridge.com/zh-HK/news/305406600",
+          "ts": "2026-11-13",
+          "score": -1.0,
           "provider": "exa"
         },
         {
-          "title": "騰訊傳「裁員50%」？知情人士澄清屬誤讀 作者 Investing.com",
-          "url": "https://hk.investing.com/news/stock-market-news/article-1754045",
-          "ts": "2026-11-12",
-          "score": -0.66,
+          "title": "$腾讯控股(00700.HK) 下周二（11/18）出三季报，市场都在担心它芯片租不到、AI 追不上。我反着看：芯片被卡…｜长桥证券",
+          "url": "https://longbridge.com/zh-CN/topics/45046980",
+          "ts": "2026-11-13",
+          "score": -0.38,
           "provider": "exa"
         }
       ],
       "thesis": {
-        "thesis": "The crowd is neutral (+0.05) across 81 posts and deteriorating; sources disagree (lihkg -0.13, telegram +0.10). The model forecasts 398.19 for 2026-11-13 (-0.15%, 68% range 387.03–409.66), with support at 376.60 and resistance at 419.60. Position: FLAT (predicted move below noise).",
+        "thesis": "The crowd is neutral (+0.04) across 84 posts and deteriorating; sources disagree (lihkg -0.13, telegram +0.06). The model forecasts 386.10 for 2026-11-16 (-0.13%, 68% range 374.57–397.98), with support at 376.60 and resistance at 419.60. Position: FLAT (predicted move below noise).",
         "key_risk": "A break of resistance would invalidate the setup.",
         "confidence": "low",
         "author": "template"
@@ -408,36 +408,36 @@
       "name": "Alibaba Group",
       "exchange": "HKEX",
       "currency": "HKD",
-      "price": 93.8,
-      "price_date": "2026-11-12",
-      "ret_1d": -0.06998738648567748,
-      "ret_5d": -0.15110002284078838,
-      "mentions": 98,
+      "price": 90.55,
+      "price_date": "2026-11-13",
+      "ret_1d": -0.03526270421748734,
+      "ret_5d": -0.14710534561886224,
+      "mentions": 100,
       "mentions_by_source": {
         "lihkg": 24,
-        "telegram": 74
+        "telegram": 76
       },
       "sent_by_source": {
-        "lihkg": -0.013940213595019462,
-        "telegram": 0.07865797502502778
+        "lihkg": -0.014483877401051802,
+        "telegram": 0.04563470218882438
       },
-      "engagement": 230.15380001919,
-      "sentiment_social": 0.05788789608552061,
-      "sentiment_news": -0.27327645852457355,
-      "sentiment_score": -0.02490319256700293,
+      "engagement": 234.58888454145898,
+      "sentiment_social": 0.03240087383010209,
+      "sentiment_news": -0.25038051749948115,
+      "sentiment_score": -0.03829447400229372,
       "sentiment_label": "Neutral",
-      "sentiment_momentum": -0.21166593829290392,
-      "after_close_posts": 28,
-      "after_close_sentiment": 0.04718034204043683,
+      "sentiment_momentum": -0.4181904061390919,
+      "after_close_posts": 4,
+      "after_close_sentiment": 0.2084136517530388,
       "news_count": 24,
-      "mention_z": 0.959591645190455,
-      "pred_session": "2026-11-13",
-      "pred_close": 93.64349726427729,
-      "pred_ret": -0.001669866112973352,
-      "pred_ret_price_only": 0.005166897235811926,
-      "pred_low_68": 89.93224262196281,
-      "pred_high_68": 97.50790510969823,
-      "direction": "Flat",
+      "mention_z": 1.567368924039827,
+      "pred_session": "2026-11-16",
+      "pred_close": 89.8561217403786,
+      "pred_ret": -0.007692440528433789,
+      "pred_ret_price_only": 0.0035202195998982498,
+      "pred_low_68": 86.21011518236111,
+      "pred_high_68": 93.6563255615941,
+      "direction": "Down",
       "position": "FLAT",
       "reason": "predicted move below noise",
       "entry": null,
@@ -445,16 +445,16 @@
       "target": null,
       "rr": null,
       "levels": {
-        "price": 93.8,
-        "atr": 3.9107137407575334,
+        "price": 90.55,
+        "atr": 4.082142530168807,
         "pivots": {
-          "P": 95.36666666666667,
-          "R1": 97.48333333333335,
-          "S1": 91.68333333333335,
-          "R2": 101.16666666666667,
-          "S2": 89.56666666666668
+          "P": 91.53333333333335,
+          "R1": 93.4666666666667,
+          "S1": 88.61666666666669,
+          "R2": 96.38333333333335,
+          "S2": 86.68333333333334
         },
-        "poc": 110.25916737238566,
+        "poc": 113.60375093460084,
         "support": 88.6500015258789,
         "support_touches": 1,
         "resistance": 95.20000076293945,
@@ -463,62 +463,72 @@
           {
             "price": 106.7999984741211,
             "touches": 10,
-            "strength": 11.94413407821229
+            "strength": 11.932960893854748
           },
           {
             "price": 128.19999923706055,
             "touches": 10,
-            "strength": 11.363128491620111
+            "strength": 11.35195530726257
           },
           {
             "price": 118.83333333333333,
             "touches": 6,
-            "strength": 7.608938547486034
+            "strength": 7.597765363128492
           },
           {
             "price": 137.89999694824218,
             "touches": 5,
-            "strength": 5.547486033519553
+            "strength": 5.5363128491620115
           },
           {
             "price": 95.20000076293945,
             "touches": 2,
-            "strength": 3.899441340782123
+            "strength": 3.888268156424581
           },
           {
             "price": 113.19999694824219,
             "touches": 1,
-            "strength": 2.776536312849162
+            "strength": 2.76536312849162
           },
           {
             "price": 88.6500015258789,
             "touches": 1,
-            "strength": 1.9273743016759777
+            "strength": 1.916201117318436
           },
           {
             "price": 144.0,
             "touches": 1,
-            "strength": 1.6033519553072626
+            "strength": 1.5921787709497206
           }
         ],
         "crowd_levels": [
+          {
+            "price": 100.0,
+            "mentions": 9
+          },
           {
             "price": 75.0,
             "mentions": 7
           },
           {
-            "price": 100.0,
-            "mentions": 6
-          },
-          {
-            "price": 102.0,
-            "mentions": 6
+            "price": 73.0,
+            "mentions": 7
           }
         ]
       },
-      "flags": [],
+      "flags": [
+        "buzz spike"
+      ],
       "top_posts": {
         "bull": [
+          {
+            "source": "telegram",
+            "ts": "2026-11-13 03:20",
+            "score": 0.38,
+            "text": "【中国政府中东问题特使翟隽会见也门总统领导委员会主席阿里米】金十数据11月13日讯，2026年11月12日，中国政府中东问题特使翟隽在利雅得应约会见也门总统领导委员会主席阿里米，双方就中也关系及当前地区局势交换意见。翟隽表示，中国同也门传统友好，建交70年来，两国关系保持平稳健康发展。近一段时间以来，也门和红海局势升温",
+            "url": "https://t.me/jin10data/1486354",
+            "w": 3.5
+          },
           {
             "source": "telegram",
             "ts": "2026-11-05 02:20",
@@ -533,14 +543,6 @@
             "score": 1.0,
             "text": "【港股午评：恒指放量单边上扬收涨3.09% 科网股集体爆发】金十数据11月5日讯，恒指早间高开后强势单边上行，半日涨超700点，盘中最高见24749.08点。恒生科技指数早间冲高一度涨逾6%，午前小幅回吐涨幅。截至午间收盘，恒指收涨3.09%，报24659.03点，科指收涨4.79%，报4124.41点，恒指大市成交额",
             "url": "https://t.me/jin10data/1478377",
-            "w": 3.5
-          },
-          {
-            "source": "telegram",
-            "ts": "2026-11-05 01:33",
-            "score": 0.83,
-            "text": "港股科网股持续走强，网易-S(09999.HK)、阿里巴巴(09988.HK)涨超5%，腾讯控股(00700.HK)涨超4%，哔哩哔哩(09626.HK)、京东(09618.HK)等跟涨。",
-            "url": "https://t.me/jin10data/1478244",
             "w": 3.5
           }
         ],
@@ -573,51 +575,51 @@
       },
       "news": [
         {
-          "title": "Alibaba Has Slumped for a Year: Why DBS Thinks It Can Double | TIKR.com",
-          "url": "https://www.tikr.com/zh/blog/alibaba-has-slumped-for-a-year-why-dbs-thinks-it-can-double",
-          "ts": "2026-11-12",
-          "score": 0.66,
+          "title": "Alibaba Just Dropped 13% in a Week. Is It Time to Sell, or Load Up? | TIKR.com",
+          "url": "https://www.tikr.com/blog/alibaba-just-dropped-13-in-a-week-is-it-time-to-sell-or-load-up",
+          "ts": "2026-11-13",
+          "score": 0.38,
           "provider": "exa"
         },
         {
-          "title": "Alibaba Sinks 7% as U.S. Readies Curbs on China’s Remote AI Chip Access",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/alibaba-sinks-7-u-readies-145849242.html",
-          "ts": "2026-11-12",
-          "score": -0.2,
+          "title": "Amid Nvidia saga, T-Head IPO a crucial test for Alibaba – and China’s AI ambitions | The Star",
+          "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/13/amid-nvidia-saga-t-head-ipo-a-crucial-test-for-alibaba---and-chinas-ai-ambitions",
+          "ts": "2026-11-13",
+          "score": 0.38,
           "provider": "exa"
         },
         {
-          "title": "Alibaba stock weighs T-Head IPO plans as approvals remain pending",
-          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/alibaba-stock-weighs-t-head-ipo-plans-as-approvals-remain-pending/70498998",
-          "ts": "2026-11-12",
+          "title": "【9988】阿里巴巴昨失守「紅底股」後、今再跌4%穿90關　逾2000買盤排隊90元入貨一沖即散",
+          "url": "https://inews.hket.com/article/4224704/%E3%80%909988%E3%80%91%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%98%A8%E5%A4%B1%E5%AE%88%E3%80%8C%E7%B4%85%E5%BA%95%E8%82%A1%E3%80%8D%E5%BE%8C%E3%80%81%E4%BB%8A%E5%86%8D%E8%B7%8C4-%E7%A9%BF90%E9%97%9C%E3%80%80%E9%80%BE2000%E8%B2%B7%E7%9B%A4%E6%8E%92%E9%9A%8A90%E5%85%83%E5%85%A5%E8%B2%A8%E4%B8%80%E6%B2%96%E5%8D%B3%E6%95%A3",
+          "ts": "2026-11-13",
           "score": 0.0,
           "provider": "exa"
         },
         {
-          "title": "阿里巴巴 (BABA) 股票价格预测：空头仍然掌控，但阿里巴巴正处于拥挤的支撑区 - Blockchain.News",
-          "url": "https://blockchain.news/news/20261112-price-prediction-baba-bears-still-have-the-tape-but-cn",
-          "ts": "2026-11-12",
-          "score": 0.83,
+          "title": "Alibaba Plunges in Afternoon Session, Briefly Breaks Below… | Longbridge",
+          "url": "https://longbridge.com/news/305423433",
+          "ts": "2026-11-13",
+          "score": -1.0,
           "provider": "exa"
         },
         {
-          "title": "Jensen Huang controversy hits Chinese AI stocks; Alibaba falls more than 7% | Lianhe Zaobao",
-          "url": "https://www.zaobao.com.sg/en/news/china/jensen-huang-controversy-hits-chinese-ai-stocks-alibaba-falls-more-7",
-          "ts": "2026-11-12",
-          "score": -0.2,
+          "title": "阿里巴巴午後急插  一度跌破90元關  2000買盤迅間消失",
+          "url": "https://www.bastillepost.com/hongkong/article/17175875-%e9%98%bf%e9%87%8c%e5%b7%b4%e5%b7%b4%e5%8d%88%e5%be%8c%e6%80%a5%e6%8f%92-%e4%b8%80%e5%ba%a6%e8%b7%8c%e7%a0%b490%e5%85%83%e9%97%9c-2000%e8%b2%b7%e7%9b%a4%e8%bf%85%e9%96%93%e6%b6%88%e5%a4%b1",
+          "ts": "2026-11-13",
+          "score": -1.0,
           "provider": "exa"
         },
         {
-          "title": "《異動股》阿里巴巴(09988)再失紅底，現價跌2.6%，報97.95元，以現價計，該股暫連跌5日，累計跌幅10.2% - 免費即時股票報價 - 大手異動 - etnet 經濟通|香港新聞財經資訊和生活平台",
-          "url": "https://www.etnet.com.hk/www/tc/stocks/realtime/quote_blocktrade_detail.php?code=9988&newsid=202611120006&page=1",
-          "ts": "2026-11-12",
+          "title": "黃仁勳出軌下台　港AI概念股腳軟　阿里巴巴6連跌、失90元大關",
+          "url": "https://www.hk01.com/%E8%B2%A1%E7%B6%93%E5%BF%AB%E8%A8%8A/60410408/%E9%BB%83%E4%BB%81%E5%8B%B3%E5%87%BA%E8%BB%8C%E4%B8%8B%E5%8F%B0-%E6%B8%AFai%E6%A6%82%E5%BF%B5%E8%82%A1%E8%85%B3%E8%BB%9F-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B46%E9%80%A3%E8%B7%8C-%E5%A4%B190%E5%85%83%E5%A4%A7%E9%97%9C",
+          "ts": "2026-11-13",
           "score": -1.0,
           "provider": "exa"
         }
       ],
       "thesis": {
-        "thesis": "The crowd is neutral (-0.02) across 98 posts and deteriorating; sources disagree (lihkg -0.01, telegram +0.08). The model forecasts 93.64 for 2026-11-13 (-0.17%, 68% range 89.93–97.51), with support at 88.65 and resistance at 95.20. Position: FLAT (predicted move below noise).",
-        "key_risk": "A break of resistance would invalidate the setup.",
+        "thesis": "The crowd is neutral (-0.04) across 100 posts and deteriorating; sources agree (lihkg -0.01, telegram +0.05). The model forecasts 89.86 for 2026-11-16 (-0.77%, 68% range 86.21–93.66), with support at 88.65 and resistance at 95.20. Position: FLAT (predicted move below noise).",
+        "key_risk": "Attention is unusually high; spikes in chatter often mark short-term exhaustion.",
         "confidence": "low",
         "author": "template"
       }
@@ -627,35 +629,35 @@
       "name": "Xiaomi Corp",
       "exchange": "HKEX",
       "currency": "HKD",
-      "price": 29.98,
-      "price_date": "2026-11-12",
-      "ret_1d": -0.003994691753791191,
-      "ret_5d": -0.04308758049659289,
-      "mentions": 76,
+      "price": 28.86,
+      "price_date": "2026-11-13",
+      "ret_1d": -0.03807392405975829,
+      "ret_5d": -0.0513279161973661,
+      "mentions": 101,
       "mentions_by_source": {
-        "lihkg": 21,
-        "telegram": 55
+        "lihkg": 44,
+        "telegram": 57
       },
       "sent_by_source": {
-        "lihkg": -0.03439805507941517,
-        "telegram": 0.2131196054881839
+        "lihkg": -0.022030872147402843,
+        "telegram": 0.25465124642478326
       },
-      "engagement": 171.06941972445512,
-      "sentiment_social": 0.14153320262485306,
-      "sentiment_news": 0.4235597025918013,
-      "sentiment_score": 0.21203982761659013,
+      "engagement": 238.05995567577298,
+      "sentiment_social": 0.12088894677426405,
+      "sentiment_news": 0.4819606506990848,
+      "sentiment_score": 0.21115687275546924,
       "sentiment_label": "Bullish",
-      "sentiment_momentum": 0.02526881620821919,
-      "after_close_posts": 1,
-      "after_close_sentiment": 0.8336546070121552,
-      "news_count": 23,
-      "mention_z": 0.1315502937722534,
-      "pred_session": "2026-11-13",
-      "pred_close": 29.94340494777901,
-      "pred_ret": -0.0012213944385260655,
-      "pred_ret_price_only": 0.0027135521093419918,
-      "pred_low_68": 28.909637449045427,
-      "pred_high_68": 31.014138501286588,
+      "sentiment_momentum": -0.11854375729683482,
+      "after_close_posts": 27,
+      "after_close_sentiment": -0.020063688598194313,
+      "news_count": 24,
+      "mention_z": -0.8668871178980598,
+      "pred_session": "2026-11-16",
+      "pred_close": 28.84221844605643,
+      "pred_ret": -0.000616321347265161,
+      "pred_ret_price_only": 0.002575713327742206,
+      "pred_low_68": 27.755542470000716,
+      "pred_high_68": 29.971439606671698,
       "direction": "Flat",
       "position": "FLAT",
       "reason": "predicted move below noise",
@@ -664,14 +666,14 @@
       "target": null,
       "rr": null,
       "levels": {
-        "price": 29.98,
-        "atr": 1.2628573226928712,
+        "price": 28.86,
+        "atr": 1.2985715321132114,
         "pivots": {
-          "P": 29.959999999999997,
-          "R1": 30.379999999999995,
-          "S1": 29.559999999999995,
-          "R2": 30.779999999999998,
-          "S2": 29.139999999999997
+          "P": 29.153333333333336,
+          "R1": 29.50666666666667,
+          "S1": 28.50666666666667,
+          "R2": 30.153333333333336,
+          "S2": 28.153333333333336
         },
         "poc": 26.05058345794678,
         "support": 25.619999885559082,
@@ -682,32 +684,32 @@
           {
             "price": 30.243636391379617,
             "touches": 22,
-            "strength": 23.955307262569832
+            "strength": 23.94413407821229
           },
           {
             "price": 25.619999885559082,
             "touches": 6,
-            "strength": 7.877094972067039
+            "strength": 7.865921787709497
           },
           {
             "price": 23.579999923706055,
             "touches": 1,
-            "strength": 2.7318435754189947
+            "strength": 2.7206703910614527
           },
           {
             "price": 21.299999237060547,
             "touches": 1,
-            "strength": 1.9273743016759777
+            "strength": 1.916201117318436
           },
           {
             "price": 37.18000030517578,
             "touches": 1,
-            "strength": 1.2011173184357542
+            "strength": 1.1899441340782122
           },
           {
             "price": 34.560001373291016,
             "touches": 1,
-            "strength": 1.1229050279329609
+            "strength": 1.111731843575419
           }
         ],
         "crowd_levels": [
@@ -720,8 +722,8 @@
             "mentions": 6
           },
           {
-            "price": 23.0,
-            "mentions": 4
+            "price": 24.0,
+            "mentions": 5
           }
         ]
       },
@@ -758,76 +760,76 @@
         "bear": [
           {
             "source": "telegram",
-            "ts": "2026-11-07 01:09",
-            "score": -0.92,
-            "text": "【金十数据整理：昨日今晨重要新闻汇总（11月7日）】 国内新闻： 1. 谷神星二号遥三运载火箭发射成功。 2. 何立峰将赴加拿大主持第二次中加经济财金战略对话。 3. 何立峰与美国财政部长贝森特、贸易代表格里尔举行视频通话。 4. 金融监管总局等七部门发布《关于加快航运保险高质量发展的指导意见》。 5. 国常会：完善资",
-            "url": "https://t.me/jin10data/1480620",
-            "w": 3.7
-          },
-          {
-            "source": "telegram",
-            "ts": "2026-11-07 00:57",
-            "score": -0.66,
-            "text": "【金十数据整理：中东局势跟踪（11月7日）】 中东冲突： 1. 美国发布新一轮涉伊朗制裁。 2. 也门一市场遭袭，也门政府与胡塞武装说法不一。 3. 沙特联军：在利雅得地区拦截并摧毁一架无人机。 4. 伊朗关联船只在海底电缆上方徘徊，此前威胁打击相关设施。 5. 伊朗为美军“镐山”潜在核打击做准备，当地已发布核爆避难指",
-            "url": "https://t.me/jin10data/1480614",
-            "w": 3.6
-          },
-          {
-            "source": "telegram",
             "ts": "2026-11-04 01:34",
             "score": -0.66,
             "text": "恒生科技指数盘初跌幅扩大至1%，小米集团(01810.HK)、携程集团-S(09961.HK)领跌成分股。",
             "url": "https://t.me/jin10data/1476854",
             "w": 3.4
+          },
+          {
+            "source": "telegram",
+            "ts": "2026-11-13 04:17",
+            "score": -1.0,
+            "text": "【港股午评：恒指收跌0.92% PCB、光通信板块走低】金十数据11月13日讯，港股早盘维持震荡走低态势，截至收盘，恒指收跌0.92%，报23786.48点，科指收跌1.75%，报3863.27点，恒指大市成交额达935.33亿港元。盘面上大多数板块飘绿，PCB概念股跌幅居前，景旺电子(0.3228.HK)跌10.75",
+            "url": "https://t.me/jin10data/1486387",
+            "w": 3.3
+          },
+          {
+            "source": "telegram",
+            "ts": "2026-11-06 07:35",
+            "score": -0.83,
+            "text": "港股科网股午后震荡走弱，阿里巴巴(09988.HK)跌近5%，小米集团(01810.HK)、腾讯控股(00700.HK)跌超3%，快手(01024.HK)、京东(09618.HK)等跟跌。",
+            "url": "https://t.me/jin10data/1479832",
+            "w": 3.3
           }
         ]
       },
       "news": [
         {
-          "title": "Xiaomi Braces for 62% Profit Slump as CLSA Trims Forecasts Ahead of Board Review",
-          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/xiaomi-braces-for-62-prozent-profit-slump-as-clsa-trims-forecasts-ahead-of-board-review/70498788",
-          "ts": "2026-11-12",
-          "score": -1.0,
+          "title": "小米集团-W(01810.HK)11月13日回购172.50万股，耗资4983.28万港元_凤凰网",
+          "url": "https://finance.ifeng.com/c/8y1meZdQOyW",
+          "ts": "2026-11-13",
+          "score": 1.0,
           "provider": "exa"
         },
         {
-          "title": "Caught Out By Xiaomi's Fall? Here's What The Bears Saw - Simply Wall St News",
-          "url": "https://simplywall.st/stocks/hk/tech/hkg-1810/xiaomi-shares/news/caught-out-by-xiaomis-fall-heres-what-the-bears-saw",
-          "ts": "2026-11-12",
-          "score": -0.76,
+          "title": "小米单日跌逾4%：英伟达风波扰动科技板块，公司回购与期权增发并行 | NewsCase",
+          "url": "https://www.newscase.com/%e5%b0%8f%e7%b1%b3%e5%8d%95%e6%97%a5%e8%b7%8c%e9%80%be4%ef%bc%9a%e8%8b%b1%e4%bc%9f%e8%be%be%e9%a3%8e%e6%b3%a2%e6%89%b0%e5%8a%a8%e7%a7%91%e6%8a%80%e6%9d%bf%e5%9d%97%ef%bc%8c%e5%85%ac%e5%8f%b8%e5%9b%9e/",
+          "ts": "2026-11-13",
+          "score": 0.0,
           "provider": "exa"
         },
         {
-          "title": "小米集团-W(01810.HK)11月12日耗资4990.9万港元回购167万股_大风号_凤凰网",
-          "url": "https://feng.ifeng.com/c/8xztdFE4wyW",
-          "ts": "2026-11-12",
-          "score": 0.96,
+          "title": "Xiaomi Slips 4.7% as Nvidia Fallout Weighs on Hong Kong Tech, Even as Buybacks Continue",
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/xiaomi-slips-4-7-prozent-as-nvidia-fallout-weighs-on-hong-kong-tech-even-as-buybacks-continue/70504844",
+          "ts": "2026-11-13",
+          "score": -0.54,
           "provider": "exa"
         },
         {
-          "title": "小米集團-W(01810)11月12日斥資4990.9萬港元回購167萬股 作者 智通財經",
-          "url": "https://hk.investing.com/news/stock-market-news/article-1754553",
-          "ts": "2026-11-12",
-          "score": 0.92,
-          "provider": "exa"
-        },
-        {
-          "title": "中信里昂：維持小米集團-W(01810)“優於大市”評級 目標價35港元 作者 智通財經",
-          "url": "https://hk.investing.com/news/stock-market-news/article-1753973",
-          "ts": "2026-11-12",
+          "title": "Xiaomi Keeps Buying Back Stock While Handing Out New Shares and Topping 50,000 Monthly EV Deliveries",
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/xiaomi-keeps-buying-back-stock-while-handing-out-new-shares-and-topping-50-000-monthly-ev-deliveries/70504011",
+          "ts": "2026-11-13",
           "score": 0.38,
           "provider": "exa"
         },
         {
-          "title": "Xiaomi Sinks With Hong Kong Tech Peers as Buyback and Daiwa Upgrade Fail to Halt Slide",
-          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/xiaomi-sinks-with-hong-kong-tech-peers-as-buyback-and-daiwa-upgrade-fail-to-halt-slide/70495141",
-          "ts": "2026-11-12",
-          "score": 0.98,
+          "title": "据港交所文件：小米集团(01810.HK)于11月13日斥资4980万港元回购170万股B - 富途牛牛",
+          "url": "https://news.futunn.com/flash/1004454906/according-to-hkex-filings-xiaomi-group-01810-hk-repurchased-1",
+          "ts": "2026-11-13",
+          "score": 0.83,
+          "provider": "exa"
+        },
+        {
+          "title": "小米集团-W(01810.HK)11月13日耗资4983.28万港元回购172.5万股",
+          "url": "https://news.futunn.com/post/1004454680/xiaomi-group-w-01810-hk-repurchased-1-725-million-shares",
+          "ts": "2026-11-13",
+          "score": 0.96,
           "provider": "exa"
         }
       ],
       "thesis": {
-        "thesis": "The crowd is bullish (+0.21) across 76 posts; sources disagree (lihkg -0.03, telegram +0.21). The model forecasts 29.94 for 2026-11-13 (-0.12%, 68% range 28.91–31.01), with support at 25.62 and resistance at 30.24. Position: FLAT (predicted move below noise).",
+        "thesis": "The crowd is bullish (+0.21) across 101 posts and deteriorating; sources disagree (lihkg -0.02, telegram +0.25). The model forecasts 28.84 for 2026-11-16 (-0.06%, 68% range 27.76–29.97), with support at 25.62 and resistance at 30.24. Position: FLAT (predicted move below noise).",
         "key_risk": "The crowd is buying a falling price; if support breaks, dip-buyers capitulate.",
         "confidence": "low",
         "author": "template"
@@ -838,35 +840,35 @@
       "name": "Meituan",
       "exchange": "HKEX",
       "currency": "HKD",
-      "price": 72.1,
-      "price_date": "2026-11-12",
-      "ret_1d": -0.010348467404821093,
-      "ret_5d": -0.10771561466626789,
-      "mentions": 131,
+      "price": 69.8,
+      "price_date": "2026-11-13",
+      "ret_1d": -0.03242001335920808,
+      "ret_5d": -0.14138018539518704,
+      "mentions": 134,
       "mentions_by_source": {
         "lihkg": 46,
-        "telegram": 85
+        "telegram": 88
       },
       "sent_by_source": {
         "lihkg": 0.0,
-        "telegram": 0.012791116262118865
+        "telegram": 0.0142140569005766
       },
-      "engagement": 262.39390147565723,
-      "sentiment_social": 0.008057086594596228,
-      "sentiment_news": 0.046590979968138595,
-      "sentiment_score": 0.01769055993798182,
+      "engagement": 265.166180325896,
+      "sentiment_social": 0.009008392304800977,
+      "sentiment_news": 0.08247188010968844,
+      "sentiment_score": 0.02737426425602284,
       "sentiment_label": "Neutral",
-      "sentiment_momentum": -0.4068618215504062,
-      "after_close_posts": 11,
-      "after_close_sentiment": -0.02056673884602385,
+      "sentiment_momentum": -0.4466480948098117,
+      "after_close_posts": 7,
+      "after_close_sentiment": 0.3088183067925505,
       "news_count": 23,
-      "mention_z": 1.0671450747066,
-      "pred_session": "2026-11-13",
-      "pred_close": 71.82546279430616,
-      "pred_ret": -0.0038149960866681004,
-      "pred_ret_price_only": 0.0020058680980715444,
-      "pred_low_68": 69.23862537132848,
-      "pred_high_68": 74.50894754118767,
+      "mention_z": 0.7621705899887505,
+      "pred_session": "2026-11-16",
+      "pred_close": 69.30721863771599,
+      "pred_ret": -0.00708494395086416,
+      "pred_ret_price_only": 0.0018067988664221498,
+      "pred_low_68": 66.81185142362872,
+      "pred_high_68": 71.89578574673895,
       "direction": "Down",
       "position": "FLAT",
       "reason": "predicted move below noise",
@@ -875,14 +877,14 @@
       "target": null,
       "rr": null,
       "levels": {
-        "price": 72.1,
-        "atr": 3.664284733363561,
+        "price": 69.8,
+        "atr": 3.5142849513462613,
         "pivots": {
-          "P": 72.16666666666667,
-          "R1": 73.33333333333334,
-          "S1": 70.93333333333334,
-          "R2": 74.56666666666668,
-          "S2": 69.76666666666667
+          "P": 70.7,
+          "R1": 71.75,
+          "S1": 68.75,
+          "R2": 73.7,
+          "S2": 67.7
         },
         "poc": 92.63645839691162,
         "support": 68.82500076293945,
@@ -893,22 +895,22 @@
           {
             "price": 81.89999974568686,
             "touches": 30,
-            "strength": 31.955307262569832
+            "strength": 31.94413407821229
           },
           {
             "price": 68.82500076293945,
             "touches": 2,
-            "strength": 3.899441340782123
+            "strength": 3.888268156424581
           },
           {
             "price": 95.57499694824219,
             "touches": 2,
-            "strength": 3.2737430167597763
+            "strength": 3.2625698324022343
           },
           {
             "price": 63.650001525878906,
             "touches": 1,
-            "strength": 1.9273743016759777
+            "strength": 1.916201117318436
           }
         ],
         "crowd_levels": [
@@ -917,11 +919,11 @@
             "mentions": 11
           },
           {
-            "price": 76.0,
-            "mentions": 8
+            "price": 73.0,
+            "mentions": 9
           },
           {
-            "price": 73.0,
+            "price": 76.0,
             "mentions": 8
           }
         ]
@@ -929,6 +931,14 @@
       "flags": [],
       "top_posts": {
         "bull": [
+          {
+            "source": "telegram",
+            "ts": "2026-11-13 13:56",
+            "score": 0.83,
+            "text": "【PPI数据公布后，货币市场下调美联储12月加息50bp的概率】金十数据11月13日讯，伦敦证券交易所集团数据显示，在美国10月份生产者价格涨幅低于预期后，相较于加息50个基点的可能性，美联储12月加息25个基点的概率有所上升。PPI指数环比上升0.3%，低于分析师预期的0.4%；同比数据为上升6.5%，低于6.6%的",
+            "url": "https://t.me/jin10data/1487047",
+            "w": 3.6
+          },
           {
             "source": "telegram",
             "ts": "2026-11-09 03:10",
@@ -944,14 +954,6 @@
             "text": "【港股午评：科指盘中一度翻绿 煤炭与生物医药板块领涨】金十数据11月9日讯，恒指早间开涨0.59%，科指开盘涨超1%，随后两大股指持续震荡走低，科指一度翻绿小幅下跌。截至午间收盘，恒指收涨0.2%，报24531.15点，科指收涨0.07%，报4081.03点，恒指大市成交额达974.12亿港元。盘面上，煤炭、生物医药、",
             "url": "https://t.me/jin10data/1481298",
             "w": 3.6
-          },
-          {
-            "source": "telegram",
-            "ts": "2026-11-12 01:07",
-            "score": 0.92,
-            "text": "1. 耐世特(01316.HK)批准最高6000万美元的股份购回计划。 2. MSCI中国旗舰指数调整：新纳入中际旭创(03308.HK)港股。 3. 星空华文(06698.HK)11月11日斥资2.07万港元回购2.61万股。 4. 百度(09888.HK)最新基础模型文心5.5 Flash Preview正式发布。",
-            "url": "https://t.me/jin10data/1484876",
-            "w": 3.5
           }
         ],
         "bear": [
@@ -977,23 +979,44 @@
             "score": -0.38,
             "text": "【泽连斯基称美俄谈俄欧安全架构“有点奇怪”】金十数据11月12日讯，乌克兰总统泽连斯基12日在爱尔兰首都都柏林举行的欧洲政治共同体领导人会议上表示，乌方认为美国与俄罗斯讨论建立俄欧新安全秩序的做法“有点奇怪”。泽连斯基说，根据乌方代表团反馈，日前在阿联酋首都阿布扎比举行的乌俄美三方会谈期间，各方就安全保障问题进行了讨论",
             "url": "https://t.me/jin10data/1485868",
-            "w": 3.3
+            "w": 3.4
           }
         ]
       },
       "news": [
         {
-          "title": "Meituan-Aktie: Goldman sieht deutlich höheren operativen Gewinn",
-          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/meituan-aktie-goldman-sieht-deutlich-hoeheren-operativen-gewinn/70499501",
-          "ts": "2026-11-12",
+          "title": "Meituan stock faces 10-day Shenzhen drone delivery pause",
+          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/meituan-stock-faces-10-day-shenzhen-drone-delivery-pause/70503405",
+          "ts": "2026-11-13",
+          "score": 0.2,
+          "provider": "exa"
+        },
+        {
+          "title": "GMT EIGHT - Latest - Hong Kong tech stocks fluctuated upward, with Meituan-W rising over 5%.",
+          "url": "https://www.gmt8press.com/flash/detail/1555193",
+          "ts": "2026-11-13",
+          "score": 0.76,
+          "provider": "exa"
+        },
+        {
+          "title": "【热炒半新股】美团挫逾3%逼近招股价爽报  11月13日最新消息_YesDaily.com!",
+          "url": "https://www.yesdaily.com/xinwen_94720.html",
+          "ts": "2026-11-13",
+          "score": -0.83,
+          "provider": "exa"
+        },
+        {
+          "title": "GMT EIGHT - Latest - Meituan-W (03690.HK): Proposed Issuance of RMB Senior Notes",
+          "url": "https://gmteight.com/flash/detail/1573334",
+          "ts": "2026-11-13",
           "score": 0.0,
           "provider": "exa"
         },
         {
-          "title": "【港股夜期+ADR+北水】阿里美股低港1%　夜期跌90點（不斷更新）",
-          "url": "https://inews.hket.com/article/4223815/%E3%80%90%E6%B8%AF%E8%82%A1%E5%A4%9C%E6%9C%9F-ADR-%E5%8C%97%E6%B0%B4%E3%80%91%E9%98%BF%E9%87%8C%E7%BE%8E%E8%82%A1%E4%BD%8E%E6%B8%AF1-%E3%80%80%E5%A4%9C%E6%9C%9F%E8%B7%8C90%E9%BB%9E%EF%BC%88%E4%B8%8D%E6%96%B7%E6%9B%B4%E6%96%B0%EF%BC%89",
-          "ts": "2026-11-12",
-          "score": -0.96,
+          "title": "GMT EIGHT - Latest - Hong Kong Stock Movement | Meituan-W (03690.HK) rises nearly 5%; company proposes to issue RMB senior notes; Citi expects Q3 results to be broadly in line with market expectations.",
+          "url": "https://gmteight.com/flash/detail/1573888",
+          "ts": "2026-11-13",
+          "score": 0.89,
           "provider": "exa"
         },
         {
@@ -1002,31 +1025,10 @@
           "ts": "2026-11-12",
           "score": 0.66,
           "provider": "exa"
-        },
-        {
-          "title": "【热炒半新股】美团挫逾3%逼近招股价爽报  11月12日最新消息_YesDaily.com!",
-          "url": "https://www.yesdaily.com/xinwen_94720.html",
-          "ts": "2026-11-12",
-          "score": -0.83,
-          "provider": "exa"
-        },
-        {
-          "title": "Meituan stock: Strong demand lifts offshore bond deal",
-          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/meituan-stock-strong-demand-lifts-offshore-bond-deal/70492768",
-          "ts": "2026-11-11",
-          "score": 0.89,
-          "provider": "exa"
-        },
-        {
-          "title": "Meituan-Aktie: Morgan Stanley warnt vor weniger Wachstum",
-          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/meituan-aktie-morgan-stanley-warnt-vor-weniger-wachstum/70491017",
-          "ts": "2026-11-11",
-          "score": 0.0,
-          "provider": "exa"
         }
       ],
       "thesis": {
-        "thesis": "The crowd is neutral (+0.02) across 131 posts and deteriorating; sources agree (lihkg +0.00, telegram +0.01). The model forecasts 71.83 for 2026-11-13 (-0.38%, 68% range 69.24–74.51), with support at 68.83 and resistance at 81.90. Position: FLAT (predicted move below noise).",
+        "thesis": "The crowd is neutral (+0.03) across 134 posts and deteriorating; sources agree (lihkg +0.00, telegram +0.01). The model forecasts 69.31 for 2026-11-16 (-0.71%, 68% range 66.81–71.90), with support at 68.83 and resistance at 81.90. Position: FLAT (predicted move below noise).",
         "key_risk": "A break of resistance would invalidate the setup.",
         "confidence": "low",
         "author": "template"
@@ -1037,35 +1039,35 @@
       "name": "BYD Company",
       "exchange": "HKEX",
       "currency": "HKD",
-      "price": 67.55,
-      "price_date": "2026-11-12",
-      "ret_1d": -0.024132754116868327,
-      "ret_5d": -0.11391005572335278,
-      "mentions": 53,
+      "price": 65.0,
+      "price_date": "2026-11-13",
+      "ret_1d": -0.03848083968833205,
+      "ret_5d": -0.131702819266577,
+      "mentions": 50,
       "mentions_by_source": {
         "lihkg": 21,
-        "telegram": 32
+        "telegram": 29
       },
       "sent_by_source": {
         "lihkg": 0.05803434363394379,
-        "telegram": 0.011791047284348391
+        "telegram": -0.029551456088852523
       },
-      "engagement": 124.77172395807324,
-      "sentiment_social": 0.026504992395625794,
-      "sentiment_news": 0.302626424807752,
-      "sentiment_score": 0.09553535049865734,
-      "sentiment_label": "Bullish",
-      "sentiment_momentum": -0.22216052308773032,
-      "after_close_posts": 1,
-      "after_close_sentiment": 0.0,
+      "engagement": 121.52590437543564,
+      "sentiment_social": -0.000938590075562738,
+      "sentiment_news": 0.24813487207972532,
+      "sentiment_score": 0.061329775463259274,
+      "sentiment_label": "Neutral",
+      "sentiment_momentum": 0.04717643235973393,
+      "after_close_posts": 0,
+      "after_close_sentiment": null,
       "news_count": 24,
-      "mention_z": 0.00923394140158188,
-      "pred_session": "2026-11-13",
-      "pred_close": 67.48563125672983,
-      "pred_ret": -0.0009533594584848052,
-      "pred_ret_price_only": 0.0003024384674384572,
-      "pred_low_68": 65.63609523672046,
-      "pred_high_68": 69.38728468983292,
+      "mention_z": -0.4880128260469944,
+      "pred_session": "2026-11-16",
+      "pred_close": 64.86930943518807,
+      "pred_ret": -0.002012648092094534,
+      "pred_ret_price_only": 0.001013701433304112,
+      "pred_low_68": 62.942285207390846,
+      "pred_high_68": 66.85533092313055,
       "direction": "Flat",
       "position": "FLAT",
       "reason": "predicted move below noise",
@@ -1074,74 +1076,74 @@
       "target": null,
       "rr": null,
       "levels": {
-        "price": 67.55,
-        "atr": 2.607142203194755,
+        "price": 65.0,
+        "atr": 2.7285708836146765,
         "pivots": {
-          "P": 68.01666666666667,
-          "R1": 68.68333333333334,
-          "S1": 66.88333333333333,
-          "R2": 69.81666666666668,
-          "S2": 66.21666666666665
+          "P": 66.10000000000001,
+          "R1": 67.40000000000002,
+          "S1": 63.70000000000002,
+          "R2": 69.80000000000001,
+          "S2": 62.400000000000006
         },
-        "poc": 89.459375,
-        "support": 67.04999923706055,
-        "support_touches": 2,
+        "poc": 70.108125,
+        "support": 63.70000000000002,
+        "support_touches": 0,
         "resistance": 71.98749923706055,
         "resistance_touches": 4,
         "swing_levels": [
           {
             "price": 88.88749980926514,
             "touches": 8,
-            "strength": 9.307262569832403
+            "strength": 9.296089385474861
           },
           {
             "price": 95.84000091552734,
             "touches": 5,
-            "strength": 6.385474860335195
+            "strength": 6.374301675977653
           },
           {
             "price": 77.5625,
             "touches": 4,
-            "strength": 5.94413407821229
+            "strength": 5.932960893854749
           },
           {
             "price": 71.98749923706055,
             "touches": 4,
-            "strength": 5.865921787709497
+            "strength": 5.854748603351956
+          },
+          {
+            "price": 101.08999938964844,
+            "touches": 5,
+            "strength": 5.569832402234637
           },
           {
             "price": 108.5,
             "touches": 4,
-            "strength": 4.5027932960893855
-          },
-          {
-            "price": 100.63749885559082,
-            "touches": 4,
-            "strength": 4.4581005586592175
+            "strength": 4.4916201117318435
           },
           {
             "price": 67.04999923706055,
             "touches": 2,
-            "strength": 3.899441340782123
+            "strength": 3.888268156424581
           },
           {
             "price": 81.7249984741211,
             "touches": 2,
-            "strength": 3.6089385474860336
+            "strength": 3.5977653631284916
           }
         ],
         "crowd_levels": [
           {
             "price": 75.0,
-            "mentions": 6
-          },
-          {
-            "price": 74.0,
             "mentions": 4
           },
           {
-            "price": 72.0,
-            "mentions": 4
+            "price": 73.0,
+            "mentions": 3
+          },
+          {
+            "price": 69.0,
+            "mentions": 3
           }
         ]
       },
@@ -1166,22 +1168,14 @@
           },
           {
             "source": "telegram",
-            "ts": "2026-11-04 06:09",
-            "score": 0.66,
-            "text": "能源： 1. 沙特阿美首席执行官：全球炼油市场供应量已减少500万桶/日。 2. 纽约时报：新泽西州州长警告，接收俄罗斯燃料将违反法律。 3. 美国能源部长赖特：（谈及昨夜对伊朗的袭击）未对石油供应造成影响。 4. 巴西国家石油局：巴西9月油气产量达到创纪录的612万桶/日。 5. IEA：预计今年全球LNG供应量将下",
-            "url": "https://t.me/jin10data/1477201",
-            "w": 3.5
+            "ts": "2026-11-05 03:26",
+            "score": 0.38,
+            "text": "【vivo与比亚迪正式签署战略合作协议】金十数据11月5日讯，10月30日，vivo与比亚迪正式签署战略合作协议，双方将基于长期深度互信与技术积累，全面深化智能终端与新能源汽车领域的生态协同，推动“手车互联”向“手车互融”演进。预计今年底至2027年，双方还将持续升级一系列手车互传体验，并探索AI跨端融合，扩展A2A应",
+            "url": "https://t.me/jin10data/1478349",
+            "w": 3.3
           }
         ],
         "bear": [
-          {
-            "source": "telegram",
-            "ts": "2026-11-04 06:55",
-            "score": -0.38,
-            "text": "1. 广东：加力支持智能网联汽车发展，推动整车企业依规争取L3级自动驾驶车型准入和上路通行试点。 2. 乘联分会：10月全国新能源乘用车厂商批发销量预估达180万辆，同比增长12%。 3. 中汽协：9月汽车商品进出口总额为334.4亿美元，同比增长34.3%。 4. 比亚迪巴西市场份额一年翻倍，10月注册量同比增137",
-            "url": "https://t.me/jin10data/1477253",
-            "w": 3.5
-          },
           {
             "source": "telegram",
             "ts": "2026-11-11 04:16",
@@ -1197,55 +1191,63 @@
             "text": "【可可期货跌至一个月低点 欧美库存增加打压价格】金十数据11月5日讯，纽约可可期货跌至一个月来最低水平，欧洲和美国仓库库存持续增加，抵消了市场对主要生产国天气风险的担忧。纽约交投最活跃的可可期货合约一度下跌4.8%，跌至10月1日以来最低水平。上一产季出现大量供应过剩后，交易所监控仓库中的可可库存持续增加，显示短期供应",
             "url": "https://t.me/jin10data/1479019",
             "w": 3.4
+          },
+          {
+            "source": "telegram",
+            "ts": "2026-11-11 07:28",
+            "score": -0.38,
+            "text": "重要新闻 1. 我国新能源汽车销量占比持续走高。 2. 国家发展改革委：深入实施共建“一带一路”科技创新行动计划。 3. 会计改革与发展“十五五”规划：推动财务造假存量加快出清、增量得到有效遏制。 个股新闻 1. 主力资金流向数据显示，新易盛主力资金净流入29.3亿元居首位，中际旭创、东山精密、长鑫科技、天孚通信获主力",
+            "url": "https://t.me/jin10data/1484037",
+            "w": 3.3
           }
         ]
       },
       "news": [
         {
-          "title": "BYD Company stock: Overseas target raises execution stakes",
-          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/byd-company-stock-overseas-target-raises-execution-stakes/70498805",
-          "ts": "2026-11-12",
-          "score": 0.95,
+          "title": "BYD Launches Third-Generation Tang Pre-Sales as Wheel Mix-Up and Margin Questions Loom",
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/byd-launches-third-generation-tang-pre-sales-as-wheel-mix-up-and-margin-questions-loom/70504015",
+          "ts": "2026-11-13",
+          "score": 0.96,
           "provider": "exa"
         },
         {
-          "title": "BYD's Overseas October Sales Double as BlackRock Cuts Its Stake",
-          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/byd-s-overseas-october-sales-double-as-blackrock-cuts-its-stake/70496888",
-          "ts": "2026-11-12",
-          "score": -0.2,
-          "provider": "exa"
-        },
-        {
-          "title": "BYD Offers Free Inspections After Supplier Coding Slip Left Some Tang SUVs With Wheels Fitted in the",
-          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/byd-offers-free-inspections-after-supplier-coding-slip-left-some-tang-suvs-with-wheels-fitted-in/70496417",
-          "ts": "2026-11-12",
-          "score": 0.0,
-          "provider": "exa"
-        },
-        {
-          "title": "比亚迪股价连续5天下跌累计跌幅6.88%，弘毅远方基金旗下1只基金持14.75万股，浮亏损失87.47万元_新浪财经_新浪网",
-          "url": "https://finance.sina.com.cn/money/fund/aiassistant/zcgyd/2026-11-12/doc-iniynifc1720944.shtml",
-          "ts": "2026-11-12",
+          "title": "比亚迪股价连续6天下跌累计跌幅7.26%，中信保诚基金旗下1只基金持4700股，浮亏损失2.94万元_新浪财经_新浪网",
+          "url": "https://finance.sina.com.cn/money/fund/aiassistant/zcgyd/2026-11-13/doc-iniyqnec1306203.shtml",
+          "ts": "2026-11-13",
           "score": -1.0,
           "provider": "exa"
         },
         {
-          "title": "比亚迪股价连续5天下跌累计跌幅6.88%，新疆前海联合基金旗下1只基金持7.16万股，浮亏损失42.46万元_新浪财经_新浪网",
-          "url": "https://finance.sina.com.cn/money/fund/aiassistant/zcgyd/2026-11-12/doc-iniynifc1715447.shtml",
-          "ts": "2026-11-12",
+          "title": "比亚迪股价连续6天下跌累计跌幅7.26%，东财基金旗下1只基金持63.67万股，浮亏损失398.58万元_新浪财经_新浪网",
+          "url": "https://finance.sina.com.cn/money/fund/aiassistant/zcgyd/2026-11-13/doc-iniyqnee8081605.shtml",
+          "ts": "2026-11-13",
           "score": -1.0,
           "provider": "exa"
         },
         {
-          "title": "花旗：維持比亞迪股份(01211)“買入”評級 目標價114港元 作者 智通財經",
-          "url": "https://hk.investing.com/news/stock-market-news/article-1753962",
-          "ts": "2026-11-12",
-          "score": 0.99,
+          "title": "GMT EIGHT - Latest - Hong Kong Stock Movement | BYD Company (01211.HK) Rises Over 6%; Second-Generation Seagull Recently Launched; Citi Bullish on Three Major Catalysts for the Company",
+          "url": "https://gmteight.com/flash/detail/1570845",
+          "ts": "2026-11-13",
+          "score": 1.0,
+          "provider": "exa"
+        },
+        {
+          "title": "比亚迪涨逾5%摩通升目标价逾两成爽报  11月13日最新消息_YesDaily.com!",
+          "url": "https://www.yesdaily.com/xinwen_66227.html",
+          "ts": "2026-11-13",
+          "score": 1.0,
+          "provider": "exa"
+        },
+        {
+          "title": "比亞迪電子(00285)挫逾5%，現報19.62元 | 全部 - 即時新聞 - 新股 IPO - 股票 | etnet 經濟通|香港新聞財經資訊和生活平台",
+          "url": "https://www.etnet.com.hk/www/tc/stocks/ipo-news-article/20261113165/%E3%80%8A%E7%95%B0%E5%8B%95%E8%82%A1%E3%80%8B%E6%AF%94%E4%BA%9E%E8%BF%AA%E9%9B%BB%E5%AD%90%2800285%29%E6%8C%AB%E9%80%BE5%25%EF%BC%8C%E7%8F%BE%E5%A0%B119.62%E5%85%83",
+          "ts": "2026-11-13",
+          "score": -1.0,
           "provider": "exa"
         }
       ],
       "thesis": {
-        "thesis": "The crowd is bullish (+0.10) across 53 posts and deteriorating; sources disagree (lihkg +0.06, telegram +0.01). The model forecasts 67.49 for 2026-11-13 (-0.10%, 68% range 65.64–69.39), with support at 67.05 and resistance at 71.99. Position: FLAT (predicted move below noise).",
+        "thesis": "The crowd is neutral (+0.06) across 50 posts; sources disagree (lihkg +0.06, telegram -0.03). The model forecasts 64.87 for 2026-11-16 (-0.20%, 68% range 62.94–66.86), with support at 63.70 and resistance at 71.99. Position: FLAT (predicted move below noise).",
         "key_risk": "A break of resistance would invalidate the setup.",
         "confidence": "low",
         "author": "template"
@@ -1256,36 +1258,36 @@
       "name": "Samsung Electronics",
       "exchange": "KRX",
       "currency": "KRW",
-      "price": 208000.0,
-      "price_date": "2026-11-12",
-      "ret_1d": 0.009661910911736626,
-      "ret_5d": 0.031748698314579826,
-      "mentions": 41959,
+      "price": 206000.0,
+      "price_date": "2026-11-13",
+      "ret_1d": -0.009661910911736626,
+      "ret_5d": 0.0877177164150762,
+      "mentions": 41915,
       "mentions_by_source": {
-        "naver": 41919,
-        "telegram": 40
+        "naver": 41874,
+        "telegram": 41
       },
       "sent_by_source": {
-        "naver": -0.05033213211127955,
-        "telegram": 0.17861076708129262
+        "naver": -0.05081962732466431,
+        "telegram": 0.13046933855473014
       },
-      "engagement": 106971.3376272539,
-      "sentiment_social": -0.049701486880074995,
-      "sentiment_news": 0.550933317568874,
-      "sentiment_score": 0.10045721423216225,
-      "sentiment_label": "Bullish",
-      "sentiment_momentum": 0.04920840812559384,
-      "after_close_posts": 1493,
-      "after_close_sentiment": -0.05924422841626402,
+      "engagement": 106661.05455430028,
+      "sentiment_social": -0.050314321824790474,
+      "sentiment_news": 0.287629371316085,
+      "sentiment_score": 0.0341716014604284,
+      "sentiment_label": "Neutral",
+      "sentiment_momentum": 0.047987027206425364,
+      "after_close_posts": 986,
+      "after_close_sentiment": -0.05639086878064826,
       "news_count": 24,
-      "mention_z": -0.6088757114951465,
-      "pred_session": "2026-11-13",
-      "pred_close": 207809.81489513407,
-      "pred_ret": -0.0009147697399889822,
-      "pred_ret_price_only": -0.002956170938819137,
-      "pred_low_68": 199253.92352619782,
-      "pred_high_68": 216733.09314319195,
-      "direction": "Flat",
+      "mention_z": -0.5574090473068565,
+      "pred_session": "2026-11-16",
+      "pred_close": 204430.42574907868,
+      "pred_ret": -0.007648467579372204,
+      "pred_ret_price_only": -0.0035073647038398634,
+      "pred_low_68": 196126.14770998806,
+      "pred_high_68": 213086.31949344743,
+      "direction": "Down",
       "position": "FLAT",
       "reason": "predicted move below noise",
       "entry": null,
@@ -1293,88 +1295,80 @@
       "target": null,
       "rr": null,
       "levels": {
-        "price": 208000.0,
-        "atr": 14014.285714285714,
+        "price": 206000.0,
+        "atr": 14907.142857142857,
         "pivots": {
-          "P": 207333.33333333334,
-          "R1": 208666.6666666667,
-          "S1": 206666.6666666667,
-          "R2": 209333.33333333334,
-          "S2": 205333.33333333334
+          "P": 209000.0,
+          "R1": 213000.0,
+          "S1": 202000.0,
+          "R2": 220000.0,
+          "S2": 198000.0
         },
         "poc": 211983.33333333334,
-        "support": 201957.14285714287,
-        "support_touches": 7,
-        "resistance": 244916.66666666666,
-        "resistance_touches": 6,
+        "support": 179550.0,
+        "support_touches": 2,
+        "resistance": 211063.63636363635,
+        "resistance_touches": 11,
         "swing_levels": [
+          {
+            "price": 211063.63636363635,
+            "touches": 11,
+            "strength": 12.832402234636872
+          },
           {
             "price": 283333.3333333333,
             "touches": 9,
-            "strength": 10.720670391061452
-          },
-          {
-            "price": 201957.14285714287,
-            "touches": 7,
-            "strength": 8.843575418994414
+            "strength": 10.709497206703912
           },
           {
             "price": 244916.66666666666,
             "touches": 6,
-            "strength": 7.888268156424581
-          },
-          {
-            "price": 227000.0,
-            "touches": 4,
-            "strength": 5.82122905027933
+            "strength": 7.877094972067039
           },
           {
             "price": 264500.0,
             "touches": 3,
-            "strength": 4.687150837988827
+            "strength": 4.675977653631285
           },
           {
             "price": 179550.0,
             "touches": 2,
-            "strength": 3.9553072625698324
+            "strength": 3.9441340782122905
           },
           {
             "price": 372250.0,
             "touches": 2,
-            "strength": 2.905027932960894
+            "strength": 2.893854748603352
           },
           {
             "price": 167150.0,
             "touches": 2,
-            "strength": 2.3016759776536313
+            "strength": 2.2905027932960893
+          },
+          {
+            "price": 310000.0,
+            "touches": 1,
+            "strength": 1.916201117318436
           }
         ],
         "crowd_levels": [
           {
             "price": 200000.0,
-            "mentions": 1553
+            "mentions": 1539
           },
           {
             "price": 180000.0,
-            "mentions": 393
+            "mentions": 403
           },
           {
             "price": 190000.0,
-            "mentions": 318
+            "mentions": 316
           }
         ]
       },
       "flags": [],
       "top_posts": {
         "bull": [
-          {
-            "source": "telegram",
-            "ts": "2026-11-03 04:44",
-            "score": 0.96,
-            "text": "대만 팀그룹: 메모리 공급 부족 2028년 하반기까지 지속 전망 1. 메모리 공급 부족 장기화 - 메모리 수급이 균형을 회복하는 시점은 최소 2028년 하반기로 예상. - 공급 부족이 가장 심각한 시기는 2026년 4분기~2027년 2분기 말로 전망. - 기존 메모리 제조업체와 중국 업",
-            "url": "https://t.me/bornlupin/20970",
-            "w": 8.5
-          },
           {
             "source": "telegram",
             "ts": "2026-11-05 00:04",
@@ -1390,6 +1384,14 @@
             "text": "J.P. Morgan ,메모리 시장 업데이트 전반적인 시장 평가 긍정적인 3분기 실적: 환율 역풍에도 불구하고 주당순이익(EPS) 및 마진율이 예상치를 상회했으며, 가격 상승 여력, 성공적인 HBM 가격 협상 및 물량 공급에 힘입어 전반적으로 긍정적인 실적을 기록했습니다. 개별 기업의 ",
             "url": "https://t.me/bornlupin/21013",
             "w": 8.3
+          },
+          {
+            "source": "telegram",
+            "ts": "2026-11-11 23:35",
+            "score": 0.38,
+            "text": "[SK증권 반도체 한동희, 손 건] 되돌림 코어위브에서 확인된 우려의 완화와 J-Curve 기대 AI 인프라 투자 우려의 핵심은 고금리 및 CDS 스프레드 급등에 따른 네오클라우드 자금조달 불안, 수주잔고 실행 실패 가능성 코어위브 실적을 통해 가중평균조달금리 하락, 임대가격 인상, 수",
+            "url": "https://t.me/bornlupin/21121",
+            "w": 8.0
           }
         ],
         "bear": [
@@ -1403,68 +1405,68 @@
           },
           {
             "source": "telegram",
+            "ts": "2026-11-12 22:47",
+            "score": -1.0,
+            "text": "[11/13, 장 시작 전 생각: 수급 변화들, 키움 한지영] - 다우 -0.4%, S&P500 -0.4%, 나스닥 -0.4% - 엔비디아 -4.3%, 마이크론 -1.6%, AMD +5.9% - WTI 88.6달러, 미 10년물 금리 5.13%, 30년물 금리 5.46% 1. 미국 증시",
+            "url": "https://t.me/hedgecat0301/2999",
+            "w": 8.5
+          },
+          {
+            "source": "telegram",
             "ts": "2026-11-05 23:04",
             "score": -0.92,
             "text": "[한국투자증권 반도체/소부장 고영민, 김연준] 반도체 - 험난한 8부 능선 ☑️ 험난하지만 8부 능선, 거의 다 왔다 ☑️ 주정부 모라토리엄 명분 축소 ☑️ 깨지지 않을 지지선, 삼성전자 17.5만원, SK하이닉스 100만원 ▶️ 데이터센터 모라토리엄? 민주당도 미국이다 - 현재의 산업",
             "url": "https://t.me/corevalue/47563",
             "w": 8.2
-          },
-          {
-            "source": "naver",
-            "ts": "2026-11-02 22:21",
-            "score": -0.38,
-            "text": "걱정하지마라 어제 국내 증시에서 삼성전자와 SK하이닉스가 상승 마감하자 미국 증시 역시 상승세로 출발했다. 그러나 이후 반도체주가 약세를 보인 것은 미국 중간선거와 맞물려 10여 개 주에서 진행되는 AI 데이터센터 건설 관련 찬반 투표, 그리고 민주당 우세를 점치는 여론조사 등이 투자심",
-            "url": "https://stock.naver.com/domestic/stock/005930/discussion",
-            "w": 8.1
           }
         ]
       },
       "news": [
         {
-          "title": "South Korea shares close down amid Nvidia leadership uncertainty - Markets - Business Recorder",
-          "url": "https://www.brecorder.com/news/40448578/south-korea-shares-close-down-amid-nvidia-leadership-uncertainty",
-          "ts": "2026-11-12",
-          "score": 0.66,
-          "provider": "exa"
-        },
-        {
-          "title": "South Korean chip giants diverge amid Nvidia's deepening scandal | Aju Press",
-          "url": "https://www.ajupress.com/view/20261112153627740",
-          "ts": "2026-11-12",
-          "score": 0.95,
-          "provider": "exa"
-        },
-        {
-          "title": "외국인 삼전 사고, 하이닉스 팔고…삼전 0.9%↑·하닉 1.80%↓(종합) | 연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20261112046051008",
-          "ts": "2026-11-12",
-          "score": 1.0,
-          "provider": "exa"
-        },
-        {
-          "title": "Samsung Electronics climbs over 2% on US semiconductor tailwinds : Finance : JKN",
-          "url": "https://news.jkn.co.kr/editions/english/post/1088170",
-          "ts": "2026-11-12",
-          "score": 1.0,
-          "provider": "exa"
-        },
-        {
-          "title": "South Korea’s Lee says Samsung chip packaging expansion to spur $30 billion additional investment – BILYONARYO Business",
-          "url": "https://bilyonaryo.com/south-koreas-lee-says-samsung-chip-packaging-expansion-to-spur-30-billion-additional-investment/",
-          "ts": "2026-11-12",
+          "title": "Le titre Modine bondit après l'annonce de négociations en vue d'un rachat par Samsung - 13/11/2026 à 12:56 - Boursorama",
+          "url": "https://www.boursorama.com/bourse/actualites/le-titre-modine-bondit-apres-l-annonce-de-negociations-en-vue-d-un-rachat-par-samsung-6b79ab06f8de9ece3d34812a810949a5",
+          "ts": "2026-11-13",
           "score": 0.0,
           "provider": "exa"
         },
         {
-          "title": "코스피, 개인 매수세 속 5400선 공방…삼성전자 2%대 강세 | 한국경제",
-          "url": "https://www.hankyung.com/article/2026111223646",
-          "ts": "2026-11-12",
-          "score": 0.96,
+          "title": "코스피 인기종목 30, 삼성전자 207,000원 하락 마감… SK하이닉스·NAVER도 약세로 돌아섰나? (+삼성전자, SK하이닉스, NAVER) < 증권 < 금융 < 기사본문 - 호수뉴스",
+          "url": "https://www.hosu-news.com/news/articleView.html?idxno=190983",
+          "ts": "2026-11-13",
+          "score": -0.96,
+          "provider": "exa"
+        },
+        {
+          "title": "AI bust? Bet goes on, albeit in moderation | Aju Press",
+          "url": "https://www.ajupress.com/view/20261113165939439",
+          "ts": "2026-11-13",
+          "score": 0.89,
+          "provider": "exa"
+        },
+        {
+          "title": "KOSPI Dips 1.2% to Fall Back Below 6,000... Samsung Electronics Plummets Over 4%",
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008821474",
+          "ts": "2026-11-13",
+          "score": -0.76,
+          "provider": "exa"
+        },
+        {
+          "title": "'젠슨황 사퇴' 효과...코스피, 상승 후 결국 0.98% 하락 5,290 마감 - 금융소비자뉴스",
+          "url": "https://m.newsfc.co.kr/news/articleView.html?idxno=82460",
+          "ts": "2026-11-13",
+          "score": -0.83,
+          "provider": "exa"
+        },
+        {
+          "title": "'젠슨황 사임' 여파 지속?…하이닉스, 3% 급락…삼전도 0.96%↓(종합) | 연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261113040151008",
+          "ts": "2026-11-13",
+          "score": -0.96,
           "provider": "exa"
         }
       ],
       "thesis": {
-        "thesis": "The crowd is bullish (+0.10) across 41,959 posts; sources disagree (naver -0.05, telegram +0.18). The model forecasts 207,810 for 2026-11-13 (-0.09%, 68% range 199,254–216,733), with support at 201,957 and resistance at 244,917. Position: FLAT (predicted move below noise).",
+        "thesis": "The crowd is neutral (+0.03) across 41,915 posts; sources disagree (naver -0.05, telegram +0.13). The model forecasts 204,430 for 2026-11-16 (-0.76%, 68% range 196,126–213,086), with support at 179,550 and resistance at 211,064. Position: FLAT (predicted move below noise).",
         "key_risk": "A break of resistance would invalidate the setup.",
         "confidence": "low",
         "author": "template"
@@ -1475,36 +1477,36 @@
       "name": "SK hynix",
       "exchange": "KRX",
       "currency": "KRW",
-      "price": 1254000.0,
-      "price_date": "2026-11-12",
-      "ret_1d": -0.01817513483967481,
-      "ret_5d": -0.007942853513936754,
-      "mentions": 43027,
+      "price": 1216000.0,
+      "price_date": "2026-11-13",
+      "ret_1d": -0.0307716586667528,
+      "ret_5d": 0.07158080376298415,
+      "mentions": 43685,
       "mentions_by_source": {
-        "naver": 42980,
-        "telegram": 47
+        "naver": 43641,
+        "telegram": 44
       },
       "sent_by_source": {
-        "naver": -0.047624416141755284,
-        "telegram": 0.09457647831178068
+        "naver": -0.05116306060291174,
+        "telegram": 0.08298253490452595
       },
-      "engagement": 108820.12006136728,
-      "sentiment_social": -0.04717201081794821,
-      "sentiment_news": 0.31905829963922344,
-      "sentiment_score": 0.0443855667963447,
+      "engagement": 109705.39577712343,
+      "sentiment_social": -0.05076596555559946,
+      "sentiment_news": 0.13782675432498964,
+      "sentiment_score": -0.003617785585452185,
       "sentiment_label": "Neutral",
-      "sentiment_momentum": 0.04759642081424884,
-      "after_close_posts": 1700,
-      "after_close_sentiment": -0.07148560779889526,
+      "sentiment_momentum": 0.03032103760783798,
+      "after_close_posts": 1155,
+      "after_close_sentiment": -0.0638951741692791,
       "news_count": 24,
-      "mention_z": -0.5175787080772808,
-      "pred_session": "2026-11-13",
-      "pred_close": 1254486.2284402533,
-      "pred_ret": 0.00038766682537868385,
-      "pred_ret_price_only": -0.0010509534714916047,
-      "pred_low_68": 1178759.651499499,
-      "pred_high_68": 1335077.6770686915,
-      "direction": "Flat",
+      "mention_z": -0.09386868895838092,
+      "pred_session": "2026-11-16",
+      "pred_close": 1206591.259726299,
+      "pred_ret": -0.0077675402666391655,
+      "pred_ret_price_only": -0.0027263293388134356,
+      "pred_low_68": 1136809.0313916528,
+      "pred_high_68": 1280657.0214046128,
+      "direction": "Down",
       "position": "FLAT",
       "reason": "predicted move below noise",
       "entry": null,
@@ -1512,88 +1514,80 @@
       "target": null,
       "rr": null,
       "levels": {
-        "price": 1254000.0,
-        "atr": 111428.57142857143,
+        "price": 1216000.0,
+        "atr": 119285.71428571429,
         "pivots": {
-          "P": 1261666.6666666667,
-          "R1": 1269333.3333333335,
-          "S1": 1246333.3333333335,
-          "R2": 1284666.6666666667,
-          "S2": 1238666.6666666667
+          "P": 1244666.6666666667,
+          "R1": 1288333.3333333335,
+          "S1": 1172333.3333333335,
+          "R2": 1360666.6666666667,
+          "S2": 1128666.6666666667
         },
         "poc": 1684708.3333333335,
         "support": 1017750.0,
         "support_touches": 8,
-        "resistance": 1567333.3333333333,
-        "resistance_touches": 3,
+        "resistance": 1547000.0,
+        "resistance_touches": 4,
         "swing_levels": [
           {
             "price": 1826000.0,
             "touches": 15,
-            "strength": 16.69832402234637
+            "strength": 16.687150837988828
           },
           {
             "price": 1017750.0,
             "touches": 8,
-            "strength": 9.955307262569832
+            "strength": 9.94413407821229
           },
           {
-            "price": 1567333.3333333333,
-            "touches": 3,
-            "strength": 4.888268156424581
+            "price": 1547000.0,
+            "touches": 4,
+            "strength": 5.877094972067039
           },
           {
             "price": 1351000.0,
             "touches": 2,
-            "strength": 3.82122905027933
+            "strength": 3.810055865921788
           },
           {
             "price": 2430000.0,
             "touches": 2,
-            "strength": 2.9385474860335195
+            "strength": 2.927374301675978
           },
           {
             "price": 1171000.0,
             "touches": 1,
-            "strength": 2.8435754189944134
-          },
-          {
-            "price": 1486000.0,
-            "touches": 1,
-            "strength": 2.3631284916201114
+            "strength": 2.832402234636872
           },
           {
             "price": 807000.0,
             "touches": 2,
-            "strength": 2.3016759776536313
+            "strength": 2.2905027932960893
+          },
+          {
+            "price": 1246000.0,
+            "touches": 1,
+            "strength": 2.195530726256983
           }
         ],
         "crowd_levels": [
           {
             "price": 1000000.0,
-            "mentions": 877
+            "mentions": 899
           },
           {
             "price": 1200000.0,
-            "mentions": 256
+            "mentions": 271
           },
           {
             "price": 1300000.0,
-            "mentions": 248
+            "mentions": 263
           }
         ]
       },
       "flags": [],
       "top_posts": {
         "bull": [
-          {
-            "source": "telegram",
-            "ts": "2026-11-03 04:44",
-            "score": 0.96,
-            "text": "대만 팀그룹: 메모리 공급 부족 2028년 하반기까지 지속 전망 1. 메모리 공급 부족 장기화 - 메모리 수급이 균형을 회복하는 시점은 최소 2028년 하반기로 예상. - 공급 부족이 가장 심각한 시기는 2026년 4분기~2027년 2분기 말로 전망. - 기존 메모리 제조업체와 중국 업",
-            "url": "https://t.me/bornlupin/20970",
-            "w": 8.5
-          },
           {
             "source": "telegram",
             "ts": "2026-11-06 21:29",
@@ -1604,11 +1598,19 @@
           },
           {
             "source": "telegram",
-            "ts": "2026-11-03 05:09",
-            "score": 0.99,
-            "text": "안녕하세요, 한투 반도체 담당 고영민 입니다. 금일 27년 연간전망을 시작으로 반도체 업종 커버리지를 재개합니다. 27년을 앞두고 최근 저희 업종은 그 어느 때보다 업황과 주가의 괴리가 크게 나타나고 있습니다. 모두가 인지할 수 있는 좋은 업황과 반대로 주가는 계속해서 낮은 수준에 머물",
-            "url": "https://t.me/corevalue/47516",
-            "w": 8.1
+            "ts": "2026-11-11 23:35",
+            "score": 0.38,
+            "text": "[SK증권 반도체 한동희, 손 건] 되돌림 코어위브에서 확인된 우려의 완화와 J-Curve 기대 AI 인프라 투자 우려의 핵심은 고금리 및 CDS 스프레드 급등에 따른 네오클라우드 자금조달 불안, 수주잔고 실행 실패 가능성 코어위브 실적을 통해 가중평균조달금리 하락, 임대가격 인상, 수",
+            "url": "https://t.me/bornlupin/21121",
+            "w": 8.0
+          },
+          {
+            "source": "naver",
+            "ts": "2026-11-05 22:42",
+            "score": 0.38,
+            "text": "전세금으로 탑승한 사람 수익 인증 월세 꼬박내고있다고 하심",
+            "url": "https://stock.naver.com/domestic/stock/000660/discussion",
+            "w": 7.9
           }
         ],
         "bear": [
@@ -1629,62 +1631,62 @@
             "w": 8.7
           },
           {
-            "source": "naver",
-            "ts": "2026-11-05 00:56",
-            "score": -0.38,
-            "text": "이해가 안가네 본사에서는 ㅈ사주 소각, 매입, 배당 이 정도면 진짜 최선을 다 하는 것 같은데, 실적 모멘텀이 부족하거나 하락의 이유가 전혀 없는데 이렇게까지 작전주처럼 밀리는게 진짜 이해가 전혀 안간다.",
-            "url": "https://stock.naver.com/domestic/stock/000660/discussion",
-            "w": 8.3
+            "source": "telegram",
+            "ts": "2026-11-12 22:47",
+            "score": -1.0,
+            "text": "[11/13, 장 시작 전 생각: 수급 변화들, 키움 한지영] - 다우 -0.4%, S&P500 -0.4%, 나스닥 -0.4% - 엔비디아 -4.3%, 마이크론 -1.6%, AMD +5.9% - WTI 88.6달러, 미 10년물 금리 5.13%, 30년물 금리 5.46% 1. 미국 증시",
+            "url": "https://t.me/hedgecat0301/2999",
+            "w": 8.5
           }
         ]
       },
       "news": [
         {
-          "title": "SK Hynix Slips 1.2% as Nvidia Boardroom Chatter and a Halved Price Target Test the Memory Trade",
-          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/sk-hynix-slips-1-2-prozent-as-nvidia-boardroom-chatter-and-a-halved-price-target-test-the-memory/70499005",
-          "ts": "2026-11-12",
+          "title": "SK hynix ADR falls on Nvidia leadership concerns",
+          "url": "https://www.streetinsider.com/Investing/SK+hynix+ADR+falls+on+Nvidia+leadership+concerns/27340883.html",
+          "ts": "2026-11-13",
+          "score": -0.38,
+          "provider": "exa"
+        },
+        {
+          "title": "많이본뉴스 증권 - 아시아경제",
+          "url": "https://www.asiae.co.kr/ranking/stock/week/20261016",
+          "ts": "2026-11-13",
+          "score": 0.0,
+          "provider": "exa"
+        },
+        {
+          "title": "Why is SK hynix stock sliding today? By Investing.com",
+          "url": "https://www.investing.com/news/stock-market-news/why-is-sk-hynix-stock-sliding-today-93CH-5026033",
+          "ts": "2026-11-13",
+          "score": -0.54,
+          "provider": "exa"
+        },
+        {
+          "title": "SK Hynix Draws Fresh Foreign Selling as Traders Look Past Record Margins to Nvidia's November 17 Pri",
+          "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/sk-hynix-draws-fresh-foreign-selling-as-traders-look-past-record-margins-to-nvidia-s-november-17/70505303",
+          "ts": "2026-11-13",
+          "score": 0.76,
+          "provider": "exa"
+        },
+        {
+          "title": "[주요공시]삼성전자, SK하이닉스, 신한지주, DL이앤씨, SK디스커버리 외 - 더스타트",
+          "url": "https://m.thestart.kr/news/newsview.php?ncode=1065615731778228",
+          "ts": "2026-11-13",
+          "score": -0.83,
+          "provider": "exa"
+        },
+        {
+          "title": "SK하이닉스, 투자자 관심 속 시세 변동 확대… 1,228,000 -2.07% 마감과 3,153,727주 거래량 주목 (+SK하이닉스, 시세, 거래량) < 증권 < 금융 < 기사본문 - 호수뉴스",
+          "url": "https://www.hosu-news.com/news/articleView.html?idxno=190832",
+          "ts": "2026-11-13",
           "score": -0.66,
-          "provider": "exa"
-        },
-        {
-          "title": "South Korea shares close down amid Nvidia leadership uncertainty - Markets - Business Recorder",
-          "url": "https://www.brecorder.com/news/40448578/south-korea-shares-close-down-amid-nvidia-leadership-uncertainty",
-          "ts": "2026-11-12",
-          "score": 0.66,
-          "provider": "exa"
-        },
-        {
-          "title": "South Korean chip giants diverge amid Nvidia's deepening scandal | Aju Press",
-          "url": "https://www.ajupress.com/view/20261112153627740",
-          "ts": "2026-11-12",
-          "score": 0.95,
-          "provider": "exa"
-        },
-        {
-          "title": "하룻밤 새 481조원 증발…’젠슨 황 해임설’에 하이닉스는 밀리고 삼성은 버텼다 By Investing.com",
-          "url": "https://kr.investing.com/news/stock-market-news/article-2171987",
-          "ts": "2026-11-12",
-          "score": 0.38,
-          "provider": "exa"
-        },
-        {
-          "title": "젠슨 황 '깐부주' 깨질라…SK하닉·현대차·네이버 '줄하락' [핫종목] < 증권 < 경제 < 기사본문 - 스포탈코리아",
-          "url": "https://www.sportalkorea.com/news/articleView.html?idxno=2025052909553696382",
-          "ts": "2026-11-12",
-          "score": -0.98,
-          "provider": "exa"
-        },
-        {
-          "title": "외국인 삼전 사고, 하이닉스 팔고…삼전 0.9%↑·하닉 1.80%↓(종합) | 연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20261112046051008",
-          "ts": "2026-11-12",
-          "score": 1.0,
           "provider": "exa"
         }
       ],
       "thesis": {
-        "thesis": "The crowd is neutral (+0.04) across 43,027 posts; sources disagree (naver -0.05, telegram +0.09). The model forecasts 1,254,486 for 2026-11-13 (+0.04%, 68% range 1,178,760–1,335,078), with support at 1,017,750 and resistance at 1,567,333. Position: FLAT (predicted move below noise).",
-        "key_risk": "A break of support would invalidate the setup.",
+        "thesis": "The crowd is neutral (-0.00) across 43,685 posts; sources disagree (naver -0.05, telegram +0.08). The model forecasts 1,206,591 for 2026-11-16 (-0.78%, 68% range 1,136,809–1,280,657), with support at 1,017,750 and resistance at 1,547,000. Position: FLAT (predicted move below noise).",
+        "key_risk": "A break of resistance would invalidate the setup.",
         "confidence": "low",
         "author": "template"
       }
@@ -1694,35 +1696,35 @@
       "name": "NAVER Corp",
       "exchange": "KRX",
       "currency": "KRW",
-      "price": 181800.0,
-      "price_date": "2026-11-12",
-      "ret_1d": -0.06649617464001523,
-      "ret_5d": -0.016907956649699685,
-      "mentions": 5833,
+      "price": 172500.0,
+      "price_date": "2026-11-13",
+      "ret_1d": -0.0525099452719644,
+      "ret_5d": -0.09767891363987502,
+      "mentions": 6659,
       "mentions_by_source": {
-        "naver": 5772,
-        "telegram": 61
+        "naver": 6597,
+        "telegram": 62
       },
       "sent_by_source": {
-        "naver": 0.010218900458089212,
-        "telegram": 0.05512863689857551
+        "naver": -0.005001166999512578,
+        "telegram": 0.053957194771286146
       },
-      "engagement": 17894.214294687168,
-      "sentiment_social": 0.011351047819344947,
-      "sentiment_news": -0.02306509513813156,
-      "sentiment_score": 0.0027470120799758203,
+      "engagement": 20310.97755714374,
+      "sentiment_social": -0.0036919891807313233,
+      "sentiment_news": 0.10224769421951951,
+      "sentiment_score": 0.022792931669331384,
       "sentiment_label": "Neutral",
-      "sentiment_momentum": -0.013349781010666854,
-      "after_close_posts": 400,
-      "after_close_sentiment": -0.08545241903926953,
+      "sentiment_momentum": -0.07459810039104414,
+      "after_close_posts": 437,
+      "after_close_sentiment": -0.07109647418455046,
       "news_count": 24,
-      "mention_z": 1.5310599572541954,
-      "pred_session": "2026-11-13",
-      "pred_close": 180346.35911521123,
-      "pred_ret": -0.008027962481105969,
-      "pred_ret_price_only": 0.0004499707765856021,
-      "pred_low_68": 173208.3381564654,
-      "pred_high_68": 187778.54225892917,
+      "mention_z": 1.3017983059395513,
+      "pred_session": "2026-11-16",
+      "pred_close": 170995.20936160686,
+      "pred_ret": -0.008761695790393693,
+      "pred_ret_price_only": 0.002666385551519008,
+      "pred_low_68": 163647.6905502038,
+      "pred_high_68": 178672.61998206883,
       "direction": "Down",
       "position": "FLAT",
       "reason": "predicted move below noise",
@@ -1731,14 +1733,14 @@
       "target": null,
       "rr": null,
       "levels": {
-        "price": 181800.0,
-        "atr": 8857.142857142857,
+        "price": 172500.0,
+        "atr": 9328.57142857143,
         "pivots": {
-          "P": 185966.66666666666,
-          "R1": 190133.3333333333,
-          "S1": 177633.3333333333,
-          "R2": 198466.66666666666,
-          "S2": 173466.66666666666
+          "P": 176066.66666666666,
+          "R1": 180133.3333333333,
+          "S1": 168433.3333333333,
+          "R2": 187766.66666666666,
+          "S2": 164366.66666666666
         },
         "poc": 226617.08333333334,
         "support": 169333.33333333334,
@@ -1749,67 +1751,57 @@
           {
             "price": 212527.77777777778,
             "touches": 18,
-            "strength": 19.631284916201118
+            "strength": 19.620111731843576
           },
           {
             "price": 190600.0,
             "touches": 10,
-            "strength": 11.87709497206704
+            "strength": 11.865921787709498
           },
           {
             "price": 231375.0,
             "touches": 8,
-            "strength": 9.441340782122905
+            "strength": 9.430167597765363
           },
           {
             "price": 169333.33333333334,
             "touches": 3,
-            "strength": 4.932960893854749
+            "strength": 4.921787709497207
           },
           {
             "price": 266250.0,
             "touches": 2,
-            "strength": 2.871508379888268
+            "strength": 2.8603351955307263
           },
           {
             "price": 294000.0,
             "touches": 1,
-            "strength": 1.8044692737430168
+            "strength": 1.7932960893854748
           },
           {
             "price": 304000.0,
             "touches": 1,
-            "strength": 1.7597765363128492
+            "strength": 1.7486033519553073
           }
         ],
         "crowd_levels": [
           {
             "price": 200000.0,
-            "mentions": 162
+            "mentions": 171
           },
           {
             "price": 180000.0,
-            "mentions": 71
+            "mentions": 80
           },
           {
-            "price": 170000.0,
-            "mentions": 68
+            "price": 150000.0,
+            "mentions": 72
           }
         ]
       },
-      "flags": [
-        "buzz spike"
-      ],
+      "flags": [],
       "top_posts": {
         "bull": [
-          {
-            "source": "telegram",
-            "ts": "2026-11-06 23:14",
-            "score": 0.66,
-            "text": "AI주 투매 하루 만에 반등한 나스닥…AI 반도체·데이터센터주 저가 매수 https://naver.me/G6RME6T6",
-            "url": "https://t.me/corevalue/47577",
-            "w": 8.6
-          },
           {
             "source": "telegram",
             "ts": "2026-11-10 22:57",
@@ -1824,7 +1816,15 @@
             "score": 0.83,
             "text": "분기 배당 두 배는 신호탄…신세계, 이익 늘자 주주환원 판 키운다 https://www.bloter.net/news/articleView.html?idxno=678333 '中 때문에 못 살겠다' 초비상 걸린 日…한국에 SOS [도쿄나우] https://www.hankyung.com/ar",
             "url": "https://t.me/YeouidoStory2/119724",
-            "w": 7.6
+            "w": 7.7
+          },
+          {
+            "source": "telegram",
+            "ts": "2026-11-12 06:47",
+            "score": 0.66,
+            "text": "<11월 12일 보고서‧기사‧특징주> ▶️보고서 메모리기판(패키지+모듈)에서 느껴지는 ABF의 향기(ft. 판가 인상, LTA / 메리츠) https://buly.kr/Csmksbr 티에프이 : SoCAMM2는 이제 시작에 불과하고 성장 아이템은 많다(현대차) https://buly.k",
+            "url": "https://t.me/YeouidoStory2/119723",
+            "w": 7.5
           }
         ],
         "bear": [
@@ -1846,61 +1846,61 @@
           },
           {
             "source": "telegram",
-            "ts": "2026-11-03 03:50",
-            "score": -0.38,
-            "text": "[속보]李 “집값 놀라울 정도로 떨어져…정확한 데이터 알려야” 출처 : 동아일보 | 네이버 - https://naver.me/5DZaD3Yk ?????",
-            "url": "https://t.me/corevalue/47512",
-            "w": 8.3
+            "ts": "2026-11-06 21:51",
+            "score": -0.92,
+            "text": "11/09~11/13 주간 변화요인: AI 관련 규제, 물가, 금리, 코어위브 실적 지난주 미국 증시는 중간선거에서 민주당이 상, 하원을 모두 장악하며 정치적 불확실성이 완화됐지만 데이터센터 규제 우려로 반도체와 AI 관련주는 급락. 오하이오 선버리에서 25MW 초과 데이터센터 건설 제",
+            "url": "https://t.me/ehdwl/11281",
+            "w": 7.6
           }
         ]
       },
       "news": [
         {
-          "title": "Naver boosts investment, Kakao protects profit as AI bets diverge",
-          "url": "https://www.digitaltoday.co.kr/en/view/125048/naver-boosts-investment-kakao-protects-profit-ai-bets-diverge",
-          "ts": "2026-11-12",
-          "score": 0.98,
+          "title": "네이버, 3분기 잉여현금흐름 -1510억원…증권사 목표주가 줄하향 < IT‧게임 < 기사본문 - 디일렉(THE ELEC)",
+          "url": "https://www.thelec.kr/news/articleView.html?idxno=65430",
+          "ts": "2026-11-13",
+          "score": -0.38,
           "provider": "exa"
         },
         {
-          "title": "[오늘의 특징주] NAVER·달바글로벌·에스피지",
-          "url": "https://www.bigtanews.co.kr/article/view/big202611120026",
-          "ts": "2026-11-12",
-          "score": -1.0,
+          "title": "상위 1%, 이틀 연속 NAVER 사들여 [주식 초고수는 지금] | 서울경제",
+          "url": "https://www.sedaily.com/article/20113952",
+          "ts": "2026-11-13",
+          "score": 0.99,
           "provider": "exa"
         },
         {
-          "title": "[특징주] 네이버 주가, 6%대 급락... 롤러코스터 장세 < 경제일반 < 경제 < 기사본문 - 금강일보",
-          "url": "https://www.ggilbo.com/news/articleView.html?idxno=1192943",
-          "ts": "2026-11-12",
-          "score": -0.99,
+          "title": "NAVER's Core Ad Business Wavers... Personalized AI Agents as Its Big Bet - The Asia Business Daily",
+          "url": "https://www.asiae.co.kr/en/article/2026111310295830817",
+          "ts": "2026-11-13",
+          "score": 0.38,
           "provider": "exa"
         },
         {
-          "title": "Naver's Q3 operating profit falls 21% as it bets on 2 trillion won deal, AI agent app and logistics subsidiary - MoneyToday",
-          "url": "https://www.mt.co.kr/en/tech/2026/11/12/2026111215474393674",
-          "ts": "2026-11-12",
-          "score": 0.54,
+          "title": "Naver Reports Record Q3 Revenue of 3.5 Trillion Won, Focuses on AI and Logistics Growth | Aju Press",
+          "url": "https://www.ajupress.com/view/20261113112070580",
+          "ts": "2026-11-13",
+          "score": 0.89,
           "provider": "exa"
         },
         {
-          "title": "NAVER Corp. Q3 Operating Income Drops, Sales Rise; Shares Down",
-          "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70106056-naver-corp-q3-operating-income-drops-sales-rise-shares-down-020.htm",
-          "ts": "2026-11-12",
-          "score": -0.76,
+          "title": "네이버, 3분기 매출 3.5조원 '역대 최대'…AI·물류, 양대 성장축 강화 | 아주경제",
+          "url": "https://www.ajunews.com/view/20261112152226607",
+          "ts": "2026-11-13",
+          "score": -0.38,
           "provider": "exa"
         },
         {
-          "title": "Naver lands W2tr AI computing deal, eyes logistics expansion - The Korea Herald",
-          "url": "https://www.koreaherald.com/article/10935262",
-          "ts": "2026-11-12",
-          "score": 0.83,
+          "title": "한국투자 \"네이버 목표주가 하향, AI 데이터센터 수익성이 향후 관건\" | 비즈니스포스트",
+          "url": "https://www.businesspost.co.kr/BP?command=article_view&num=451934",
+          "ts": "2026-11-13",
+          "score": 0.92,
           "provider": "exa"
         }
       ],
       "thesis": {
-        "thesis": "The crowd is neutral (+0.00) across 5,833 posts; sources disagree (naver +0.01, telegram +0.06). The model forecasts 180,346 for 2026-11-13 (-0.80%, 68% range 173,208–187,779), with support at 169,333 and resistance at 190,600. Position: FLAT (predicted move below noise).",
-        "key_risk": "Attention is unusually high; spikes in chatter often mark short-term exhaustion.",
+        "thesis": "The crowd is neutral (+0.02) across 6,659 posts and deteriorating; sources disagree (naver -0.01, telegram +0.05). The model forecasts 170,995 for 2026-11-16 (-0.88%, 68% range 163,648–178,673), with support at 169,333 and resistance at 190,600. Position: FLAT (predicted move below noise).",
+        "key_risk": "A break of resistance would invalidate the setup.",
         "confidence": "low",
         "author": "template"
       }
@@ -1911,34 +1911,34 @@
       "exchange": "KRX",
       "currency": "KRW",
       "price": 31700.0,
-      "price_date": "2026-11-12",
-      "ret_1d": -0.009419221916491693,
-      "ret_5d": -0.01564977166712822,
-      "mentions": 1691,
+      "price_date": "2026-11-13",
+      "ret_1d": 0.0,
+      "ret_5d": -0.018750549345375234,
+      "mentions": 1555,
       "mentions_by_source": {
-        "naver": 1687,
-        "telegram": 4
+        "naver": 1550,
+        "telegram": 5
       },
       "sent_by_source": {
-        "naver": -0.0486304390589139,
-        "telegram": 0.6931105010579824
+        "naver": -0.03809016830774547,
+        "telegram": 0.5204565988121188
       },
-      "engagement": 4917.451257647686,
-      "sentiment_social": -0.0453379247092056,
-      "sentiment_news": 0.49681417148315576,
-      "sentiment_score": 0.09020009933888475,
+      "engagement": 4566.793041223938,
+      "sentiment_social": -0.03452136639692657,
+      "sentiment_news": 0.5760519257344255,
+      "sentiment_score": 0.11812195663591146,
       "sentiment_label": "Bullish",
-      "sentiment_momentum": -0.022749082167951892,
-      "after_close_posts": 39,
-      "after_close_sentiment": -0.09265999329802993,
-      "news_count": 23,
-      "mention_z": -0.8616992638918842,
-      "pred_session": "2026-11-13",
-      "pred_close": 31655.820231218993,
-      "pred_ret": -0.001394655637976524,
-      "pred_ret_price_only": 0.001212434502508929,
-      "pred_low_68": 30572.093124929834,
-      "pred_high_68": 32777.96356357768,
+      "sentiment_momentum": -0.08499038400726755,
+      "after_close_posts": 23,
+      "after_close_sentiment": 0.050444246258328475,
+      "news_count": 24,
+      "mention_z": -1.223192821303247,
+      "pred_session": "2026-11-16",
+      "pred_close": 31756.82942038644,
+      "pred_ret": 0.0017911211794998149,
+      "pred_ret_price_only": 0.0018499355702883882,
+      "pred_low_68": 30667.117508454598,
+      "pred_high_68": 32885.26267776846,
       "direction": "Flat",
       "position": "FLAT",
       "reason": "predicted move below noise",
@@ -1948,72 +1948,72 @@
       "rr": null,
       "levels": {
         "price": 31700.0,
-        "atr": 1242.857142857143,
+        "atr": 1285.7142857142858,
         "pivots": {
-          "P": 31800.0,
-          "R1": 31900.0,
-          "S1": 31600.0,
-          "R2": 32100.0,
-          "S2": 31500.0
+          "P": 31900.0,
+          "R1": 32300.0,
+          "S1": 31300.0,
+          "R2": 32900.0,
+          "S2": 30900.0
         },
         "poc": 35882.5,
         "support": 30450.0,
         "support_touches": 2,
-        "resistance": 33157.142857142855,
-        "resistance_touches": 7,
+        "resistance": 33175.0,
+        "resistance_touches": 8,
         "swing_levels": [
           {
-            "price": 33157.142857142855,
-            "touches": 7,
-            "strength": 8.787709497206704
+            "price": 33175.0,
+            "touches": 8,
+            "strength": 9.966480446927374
           },
           {
             "price": 37107.142857142855,
             "touches": 7,
-            "strength": 8.519553072625698
+            "strength": 8.508379888268156
           },
           {
             "price": 46870.0,
             "touches": 5,
-            "strength": 5.648044692737431
+            "strength": 5.636871508379889
           },
           {
             "price": 34625.0,
             "touches": 4,
-            "strength": 5.64245810055866
+            "strength": 5.631284916201118
           },
           {
             "price": 48800.0,
             "touches": 4,
-            "strength": 4.759776536312849
+            "strength": 4.748603351955307
           },
           {
             "price": 30450.0,
             "touches": 2,
-            "strength": 3.877094972067039
+            "strength": 3.865921787709497
           },
           {
             "price": 28400.0,
             "touches": 1,
-            "strength": 2.932960893854749
+            "strength": 2.921787709497207
           },
           {
             "price": 41450.0,
             "touches": 1,
-            "strength": 2.3184357541899443
+            "strength": 2.3072625698324023
           }
         ],
         "crowd_levels": [
           {
             "price": 30000.0,
-            "mentions": 39
+            "mentions": 40
           },
           {
             "price": 32000.0,
             "mentions": 26
           },
           {
-            "price": 29000.0,
+            "price": 35000.0,
             "mentions": 9
           }
         ]
@@ -2075,10 +2075,10 @@
       },
       "news": [
         {
-          "title": "카카오 주가 하락 중",
-          "url": "https://m.anewsa.com/article_sub3.php?mobile=&number=3217248&type=",
-          "ts": "2026-11-12",
-          "score": -0.92,
+          "title": "카카오(035720) : 씽크풀",
+          "url": "https://www.thinkpool.com/item/035720/news/16975435",
+          "ts": "2026-11-13",
+          "score": 0.38,
           "provider": "exa"
         },
         {
@@ -2089,10 +2089,24 @@
           "provider": "exa"
         },
         {
+          "title": "Kakao meets overseas investors as it seeks support for split, moves up 150 billion won share cancellation - MoneyToday",
+          "url": "https://www.mt.co.kr/index.php/en/tech/2026/11/11/2026111110155237056",
+          "ts": "2026-11-11",
+          "score": 0.95,
+          "provider": "exa"
+        },
+        {
+          "title": "Kakao holds overseas IR meetings in Hong Kong, Singapore to outline spinoff plans - The Herald Business",
+          "url": "https://biz.heraldcorp.com/article/10933124",
+          "ts": "2026-11-11",
+          "score": 0.83,
+          "provider": "exa"
+        },
+        {
           "title": "Kakao stock gains as platform growth offsets weaker content",
           "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/kakao-stock-gains-as-platform-growth-offsets-weaker-content/70488902",
           "ts": "2026-11-11",
-          "score": 0.98,
+          "score": 1.0,
           "provider": "exa"
         },
         {
@@ -2101,25 +2115,11 @@
           "ts": "2026-11-11",
           "score": 0.92,
           "provider": "exa"
-        },
-        {
-          "title": "[단독] 카카오, 150만 주주명부 ‘종이 6박스’로 제공… 소액주주 “주주권 방해”",
-          "url": "https://www.chosun.com/economy/tech_it/2026/11/10/U4RTJM6RANCTBH33GWHB23DKBE/",
-          "ts": "2026-11-10",
-          "score": 0.0,
-          "provider": "exa"
-        },
-        {
-          "title": "카카오 주가 상승 중",
-          "url": "https://m.anewsa.com/article_sub3.php?mobile=&number=3216214&type=",
-          "ts": "2026-11-10",
-          "score": 0.92,
-          "provider": "exa"
         }
       ],
       "thesis": {
-        "thesis": "The crowd is bullish (+0.09) across 1,691 posts; sources disagree (naver -0.05, telegram +0.69). The model forecasts 31,656 for 2026-11-13 (-0.14%, 68% range 30,572–32,778), with support at 30,450 and resistance at 33,157. Position: FLAT (predicted move below noise).",
-        "key_risk": "A break of resistance would invalidate the setup.",
+        "thesis": "The crowd is bullish (+0.12) across 1,555 posts and deteriorating; sources disagree (naver -0.04, telegram +0.52). The model forecasts 31,757 for 2026-11-16 (+0.18%, 68% range 30,667–32,885), with support at 30,450 and resistance at 33,175. Position: FLAT (predicted move below noise).",
+        "key_risk": "A break of support would invalidate the setup.",
         "confidence": "low",
         "author": "template"
       }
@@ -2129,117 +2129,115 @@
       "name": "Hyundai Motor",
       "exchange": "KRX",
       "currency": "KRW",
-      "price": 266500.0,
-      "price_date": "2026-11-12",
-      "ret_1d": -0.02226437049739971,
-      "ret_5d": -0.09650339566225163,
-      "mentions": 4629,
+      "price": 269500.0,
+      "price_date": "2026-11-13",
+      "ret_1d": 0.011194146743152444,
+      "ret_5d": -0.036433902246102434,
+      "mentions": 4437,
       "mentions_by_source": {
-        "naver": 4614,
-        "telegram": 15
+        "naver": 4421,
+        "telegram": 16
       },
       "sent_by_source": {
-        "naver": 0.005861813187168751,
-        "telegram": 0.5564560273324568
+        "naver": 0.01310747572107182,
+        "telegram": 0.5923483744821146
       },
-      "engagement": 12944.77387357932,
-      "sentiment_social": 0.009452180891722168,
-      "sentiment_news": -0.0005668330254450932,
-      "sentiment_score": 0.006947427412430353,
+      "engagement": 12419.379965666834,
+      "sentiment_social": 0.017413684965621155,
+      "sentiment_news": 0.2155574271719322,
+      "sentiment_score": 0.06694962051719891,
       "sentiment_label": "Neutral",
-      "sentiment_momentum": -0.039456852155124816,
-      "after_close_posts": 224,
-      "after_close_sentiment": -0.07126909262832518,
+      "sentiment_momentum": -0.06828892377393612,
+      "after_close_posts": 68,
+      "after_close_sentiment": 0.06431659984168733,
       "news_count": 24,
-      "mention_z": 1.7366989621591993,
-      "pred_session": "2026-11-13",
-      "pred_close": 263700.9462096716,
-      "pred_ret": -0.010558562048046132,
-      "pred_ret_price_only": -0.0022636656883492645,
-      "pred_low_68": 256174.52637752856,
-      "pred_high_68": 271448.4926163055,
+      "mention_z": -0.021448718835361005,
+      "pred_session": "2026-11-16",
+      "pred_close": 267232.78874919284,
+      "pred_ret": -0.00844824383040631,
+      "pred_ret_price_only": -0.002358444786346743,
+      "pred_low_68": 259884.90158328932,
+      "pred_high_68": 274788.42729070113,
       "direction": "Down",
       "position": "SHORT",
       "reason": "model + crowd agree; low reward/risk, size down",
-      "entry": 266500.0,
-      "stop": 295928.5714285714,
-      "target": 251785.7142857143,
+      "entry": 269500.0,
+      "stop": 299500.0,
+      "target": 254500.0,
       "rr": 0.5,
       "levels": {
-        "price": 266500.0,
-        "atr": 14714.285714285714,
+        "price": 269500.0,
+        "atr": 15000.0,
         "pivots": {
-          "P": 268500.0,
-          "R1": 270500.0,
-          "S1": 264500.0,
-          "R2": 274500.0,
-          "S2": 262500.0
+          "P": 272166.6666666667,
+          "R1": 276333.3333333334,
+          "S1": 265333.3333333334,
+          "R2": 283166.6666666667,
+          "S2": 261166.6666666667
         },
-        "poc": 404506.25,
-        "support": 264500.0,
-        "support_touches": 0,
+        "poc": 404231.25,
+        "support": 267500.0,
+        "support_touches": 1,
         "resistance": 308750.0,
         "resistance_touches": 2,
         "swing_levels": [
           {
             "price": 433333.3333333333,
             "touches": 3,
-            "strength": 4.418994413407821
+            "strength": 4.407821229050279
           },
           {
             "price": 459000.0,
             "touches": 3,
-            "strength": 4.351955307262569
+            "strength": 4.340782122905027
           },
           {
             "price": 512666.6666666667,
             "touches": 3,
-            "strength": 3.994413407821229
+            "strength": 3.983240223463687
           },
           {
             "price": 308750.0,
             "touches": 2,
-            "strength": 3.9441340782122905
+            "strength": 3.932960893854749
           },
           {
             "price": 286500.0,
             "touches": 2,
-            "strength": 3.8547486033519553
+            "strength": 3.8435754189944134
+          },
+          {
+            "price": 568333.3333333334,
+            "touches": 3,
+            "strength": 3.826815642458101
           },
           {
             "price": 326000.0,
             "touches": 2,
-            "strength": 3.810055865921788
+            "strength": 3.798882681564246
           },
           {
             "price": 377750.0,
             "touches": 2,
-            "strength": 3.4860335195530725
-          },
-          {
-            "price": 496500.0,
-            "touches": 3,
-            "strength": 3.3240223463687153
+            "strength": 3.4748603351955305
           }
         ],
         "crowd_levels": [
           {
-            "price": 200000.0,
-            "mentions": 118
-          },
-          {
             "price": 300000.0,
-            "mentions": 75
+            "mentions": 74
           },
           {
             "price": 250000.0,
-            "mentions": 65
+            "mentions": 64
+          },
+          {
+            "price": 270000.0,
+            "mentions": 42
           }
         ]
       },
-      "flags": [
-        "buzz spike"
-      ],
+      "flags": [],
       "top_posts": {
         "bull": [
           {
@@ -2252,19 +2250,19 @@
           },
           {
             "source": "telegram",
+            "ts": "2026-11-12 06:47",
+            "score": 0.66,
+            "text": "<11월 12일 보고서‧기사‧특징주> ▶️보고서 메모리기판(패키지+모듈)에서 느껴지는 ABF의 향기(ft. 판가 인상, LTA / 메리츠) https://buly.kr/Csmksbr 티에프이 : SoCAMM2는 이제 시작에 불과하고 성장 아이템은 많다(현대차) https://buly.k",
+            "url": "https://t.me/YeouidoStory2/119723",
+            "w": 7.5
+          },
+          {
+            "source": "telegram",
             "ts": "2026-11-10 06:57",
             "score": 0.38,
             "text": "<11월 10일 보고서‧기사‧특징주> ▶️보고서 반도체 : 다운턴 하단을 반영하고 있는 주가(SK) https://buly.kr/28wVxVp 조선 : 부유식 데이터센터 밸류체인 매수 콜(한투) https://buly.kr/74ZjnLQ 2차전지 : 2027 산업전망; 2차전지 — 성장",
             "url": "https://t.me/YeouidoStory2/119577",
             "w": 7.4
-          },
-          {
-            "source": "telegram",
-            "ts": "2026-11-12 06:47",
-            "score": 0.66,
-            "text": "<11월 12일 보고서‧기사‧특징주> ▶️보고서 메모리기판(패키지+모듈)에서 느껴지는 ABF의 향기(ft. 판가 인상, LTA / 메리츠) https://buly.kr/Csmksbr 티에프이 : SoCAMM2는 이제 시작에 불과하고 성장 아이템은 많다(현대차) https://buly.k",
-            "url": "https://t.me/YeouidoStory2/119723",
-            "w": 7.3
           }
         ],
         "bear": [
@@ -2296,51 +2294,51 @@
       },
       "news": [
         {
-          "title": "Hyundai needs 391,000 monthly sales to meet reduced 2026 goal",
-          "url": "https://seoulmarketwire.com/posts/korea-autos-brokers-sales-over-robots-2026-11-12/",
-          "ts": "2026-11-12",
-          "score": -0.2,
+          "title": "KOSPI Surrenders 5,300 Line After Early Gains Fade",
+          "url": "https://en.sedaily.com/market/2026/11/13/kospi-surrenders-5300-line-after-early-gains-fade",
+          "ts": "2026-11-13",
+          "score": 0.89,
           "provider": "exa"
         },
         {
-          "title": "SOCAR teams up with Hyundai Motor Company on autonomous driving business - MK",
-          "url": "https://www.mk.co.kr/en/business/12206326",
-          "ts": "2026-11-12",
-          "score": 0.66,
+          "title": "Huang resignation clouds Hyundai autonomous driving plan and GPU supply - CHOSUNBIZ",
+          "url": "https://biz.chosun.com/en/en-industry/2026/11/13/476PZP23ZNEOXCLM6BZAIPZ2NQ/?outputType=amp",
+          "ts": "2026-11-13",
+          "score": -0.66,
           "provider": "exa"
         },
         {
-          "title": "Hyundai Motor Q3 Net Falls 24.2 Pc On Production Disruptions, Weak Demand",
-          "url": "https://coinsinsight.com/1111882541/Hyundai-Motor-Q3-Net-Falls-242-Pc-On-Production-Disruptions-Weak-Demand",
-          "ts": "2026-11-12",
-          "score": -0.98,
+          "title": "China’s Auto Exports to Top 10 Million, Boosting Hyundai Glovis Revenue to Record High - Businesskorea",
+          "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=281224",
+          "ts": "2026-11-13",
+          "score": 0.98,
           "provider": "exa"
         },
         {
-          "title": "현대차, 글로벌 불확실성에도 주주 소통 강화…기업가치 제고 노력 - 머니투데이",
-          "url": "https://www.mt.co.kr/stock/2026/11/12/2026111110030193643",
-          "ts": "2026-11-11",
+          "title": "현대오토에버 주가 상승 중",
+          "url": "https://www.anewsa.com/detail.php?number=3217625",
+          "ts": "2026-11-13",
+          "score": 0.92,
+          "provider": "exa"
+        },
+        {
+          "title": "Hyundai Motor Poised for Value Re-Evaluation with 2027 Sales Recovery, 2028 Robotics Push",
+          "url": "https://www.chosun.com/english/market-money-en/2026/11/13/HMDJEVYE3RCKNH45FR5OU7AI4A/",
+          "ts": "2026-11-13",
           "score": 0.0,
           "provider": "exa"
         },
         {
-          "title": "[Exclusive] North American results earn Muñoz another go; Euisun Chung’s special directive: “Steer future businesses” - MK",
-          "url": "https://www.mk.co.kr/en/business/12205640",
-          "ts": "2026-11-11",
+          "title": "Hana Securities sees Hyundai Motor sales recovering in 2027, robotics mass production in 2028 - CHOSUNBIZ",
+          "url": "https://biz.chosun.com/en/en-finance/2026/11/13/JE6YXBTLMFHF3LL56AMNZFFBDI/",
+          "ts": "2026-11-13",
           "score": 0.83,
-          "provider": "exa"
-        },
-        {
-          "title": "한화증권 \"현대차·기아, 수익성 저하 장기화\"…목표가↓ | 연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20261110028700008",
-          "ts": "2026-11-09",
-          "score": 0.92,
           "provider": "exa"
         }
       ],
       "thesis": {
-        "thesis": "The crowd is neutral (+0.01) across 4,629 posts; sources disagree (naver +0.01, telegram +0.56). The model forecasts 263,701 for 2026-11-13 (-1.06%, 68% range 256,175–271,448), with support at 264,500 and resistance at 308,750. Position: SHORT with stop 295,929 and target 251,786 (R:R 0.50).",
-        "key_risk": "Attention is unusually high; spikes in chatter often mark short-term exhaustion.",
+        "thesis": "The crowd is neutral (+0.07) across 4,437 posts and deteriorating; sources disagree (naver +0.01, telegram +0.59). The model forecasts 267,233 for 2026-11-16 (-0.84%, 68% range 259,885–274,788), with support at 267,500 and resistance at 308,750. Position: SHORT with stop 299,500 and target 254,500 (R:R 0.50).",
+        "key_risk": "A break of resistance would invalidate the setup.",
         "confidence": "low",
         "author": "template"
       }
@@ -2352,8 +2350,8 @@
       "model": "naive",
       "n": 49,
       "sessions": 5,
-      "MAE_pct": 2.487137008711473,
-      "RMSE_pct": 3.4588360235764783,
+      "MAE_pct": 2.2855713106210938,
+      "RMSE_pct": 2.998226508494425,
       "dir_hits": NaN,
       "dir_n": NaN,
       "dir_acc_pct": NaN,
@@ -2365,34 +2363,34 @@
       "model": "price_only",
       "n": 49,
       "sessions": 5,
-      "MAE_pct": 2.502376922000043,
-      "RMSE_pct": 3.528173297217648,
-      "dir_hits": 28.0,
-      "dir_n": 49.0,
-      "dir_acc_pct": 57.142857142857146,
-      "dir_p_value": 0.3916029105474905,
-      "MAE_vs_naive_pct": -0.612749246832418
+      "MAE_pct": 2.3152502314414685,
+      "RMSE_pct": 3.011586889756508,
+      "dir_hits": 22.0,
+      "dir_n": 48.0,
+      "dir_acc_pct": 45.833333333333336,
+      "dir_p_value": 0.6654658120766186,
+      "MAE_vs_naive_pct": -1.2985340112757013
     },
     {
       "scope": "ALL",
       "model": "sentiment",
       "n": 49,
       "sessions": 5,
-      "MAE_pct": 2.919623955990696,
-      "RMSE_pct": 4.119219913393114,
-      "dir_hits": 20.0,
-      "dir_n": 49.0,
-      "dir_acc_pct": 40.816326530612244,
-      "dir_p_value": 0.2528697301676033,
-      "MAE_vs_naive_pct": -17.388947442959093
+      "MAE_pct": 2.3847810030161924,
+      "RMSE_pct": 3.054854569669232,
+      "dir_hits": 27.0,
+      "dir_n": 48.0,
+      "dir_acc_pct": 56.25,
+      "dir_p_value": 0.4708790136217118,
+      "MAE_vs_naive_pct": -4.3406955597521435
     },
     {
       "scope": "HKEX",
       "model": "naive",
       "n": 24,
       "sessions": 5,
-      "MAE_pct": 2.1116781933192605,
-      "RMSE_pct": 2.8249179669940263,
+      "MAE_pct": 2.3646800223017355,
+      "RMSE_pct": 3.025666235871859,
       "dir_hits": NaN,
       "dir_n": NaN,
       "dir_acc_pct": NaN,
@@ -2404,34 +2402,34 @@
       "model": "price_only",
       "n": 24,
       "sessions": 5,
-      "MAE_pct": 2.0669442528457758,
-      "RMSE_pct": 2.7664301350229605,
+      "MAE_pct": 2.4058149729543743,
+      "RMSE_pct": 3.0848856220038487,
+      "dir_hits": 11.0,
+      "dir_n": 24.0,
+      "dir_acc_pct": 45.833333333333336,
+      "dir_p_value": 0.8388197422027588,
+      "MAE_vs_naive_pct": -1.7395567376849084
+    },
+    {
+      "scope": "HKEX",
+      "model": "sentiment",
+      "n": 24,
+      "sessions": 5,
+      "MAE_pct": 2.493751725942665,
+      "RMSE_pct": 3.012523784759024,
       "dir_hits": 15.0,
       "dir_n": 24.0,
       "dir_acc_pct": 62.5,
       "dir_p_value": 0.30745625495910645,
-      "MAE_vs_naive_pct": 2.1184070856539616
-    },
-    {
-      "scope": "HKEX",
-      "model": "sentiment",
-      "n": 24,
-      "sessions": 5,
-      "MAE_pct": 2.539664717494775,
-      "RMSE_pct": 3.2024140569448836,
-      "dir_hits": 10.0,
-      "dir_n": 24.0,
-      "dir_acc_pct": 41.666666666666664,
-      "dir_p_value": 0.5412561893463135,
-      "MAE_vs_naive_pct": -20.267601641648806
+      "MAE_vs_naive_pct": -5.45831581540126
     },
     {
       "scope": "KRX",
       "model": "naive",
       "n": 25,
       "sessions": 5,
-      "MAE_pct": 2.8475774714879987,
-      "RMSE_pct": 3.9733608382608843,
+      "MAE_pct": 2.209626947407678,
+      "RMSE_pct": 2.971646005258468,
       "dir_hits": NaN,
       "dir_n": NaN,
       "dir_acc_pct": NaN,
@@ -2443,49 +2441,239 @@
       "model": "price_only",
       "n": 25,
       "sessions": 5,
-      "MAE_pct": 2.920392284388139,
-      "RMSE_pct": 4.129295713981584,
-      "dir_hits": 13.0,
-      "dir_n": 25.0,
-      "dir_acc_pct": 52.0,
-      "dir_p_value": 1.0,
-      "MAE_vs_naive_pct": -2.557079258745889
+      "MAE_pct": 2.2283080795890786,
+      "RMSE_pct": 2.9395010523067,
+      "dir_hits": 11.0,
+      "dir_n": 24.0,
+      "dir_acc_pct": 45.833333333333336,
+      "dir_p_value": 0.8388197422027588,
+      "MAE_vs_naive_pct": -0.8454428112092423
     },
     {
       "scope": "KRX",
       "model": "sentiment",
       "n": 25,
       "sessions": 5,
-      "MAE_pct": 3.2843848249467804,
-      "RMSE_pct": 4.838593692547404,
-      "dir_hits": 10.0,
-      "dir_n": 25.0,
-      "dir_acc_pct": 40.0,
-      "dir_p_value": 0.42435622215270996,
-      "MAE_vs_naive_pct": -15.339612629767313
+      "MAE_pct": 2.280169109006779,
+      "RMSE_pct": 3.0949474719929477,
+      "dir_hits": 12.0,
+      "dir_n": 24.0,
+      "dir_acc_pct": 50.0,
+      "dir_p_value": 1.0,
+      "MAE_vs_naive_pct": -3.1924919128027716
     }
   ],
   "stage2_coefs": {
-    "sent_social": -0.00114,
-    "sent_news": 0.00196,
-    "d_sent": 0.00083,
-    "mention_z": -0.00346,
-    "bull_minus_bear": -0.00118
+    "sent_social": -0.0013,
+    "sent_news": -0.00068,
+    "d_sent": 0.00109,
+    "mention_z": -0.00415,
+    "bull_minus_bear": -0.00114
   },
   "stage1_coefs": {
-    "ret_1": -0.00034,
-    "ret_5": -0.00254,
-    "vol_10": 0.00098,
-    "rsi_c": -0.00121,
-    "dist_sma20": 0.00014,
-    "range_pos": 0.00316,
-    "vol_z": 0.00089,
-    "mkt_ret_1": -0.0016
+    "ret_1": -0.00012,
+    "ret_5": -0.00234,
+    "vol_10": 0.0005,
+    "rsi_c": 0.00174,
+    "dist_sma20": -0.00167,
+    "range_pos": 0.00208,
+    "vol_z": 0.00083,
+    "mkt_ret_1": -0.00167
   },
   "track_record": {
-    "scored": 30,
-    "pending": 10,
+    "scored": 40,
+    "pending": 0,
     "rows": [
+      {
+        "run_at": "2026-11-12T17:45:39.113412+00:00",
+        "ticker": "000660.KS",
+        "exchange": "KRX",
+        "base_date": "2026-11-12",
+        "base_close": 1254000.0,
+        "target_session": "2026-11-13",
+        "pred_close": 1254486.2284402533,
+        "pred_ret": 0.00038766682537868385,
+        "position": "FLAT",
+        "status": "scored",
+        "actual_date": "2026-11-13",
+        "actual_close": 1216000.0,
+        "actual_ret": -0.03077165866675366,
+        "abs_err_pct": 3.164985891468199,
+        "naive_abs_err_pct": 3.125,
+        "direction_hit": false,
+        "position_pnl_pct": -0.0
+      },
+      {
+        "run_at": "2026-11-12T17:45:39.113412+00:00",
+        "ticker": "005380.KS",
+        "exchange": "KRX",
+        "base_date": "2026-11-12",
+        "base_close": 266500.0,
+        "target_session": "2026-11-13",
+        "pred_close": 263700.9462096716,
+        "pred_ret": -0.010558562048046132,
+        "position": "SHORT",
+        "status": "scored",
+        "actual_date": "2026-11-13",
+        "actual_close": 269500.0,
+        "actual_ret": 0.011194146743152708,
+        "abs_err_pct": 2.151782482496617,
+        "naive_abs_err_pct": 1.1131725417439704,
+        "direction_hit": false,
+        "position_pnl_pct": -1.1194146743152709
+      },
+      {
+        "run_at": "2026-11-12T17:45:39.113412+00:00",
+        "ticker": "005930.KS",
+        "exchange": "KRX",
+        "base_date": "2026-11-12",
+        "base_close": 208000.0,
+        "target_session": "2026-11-13",
+        "pred_close": 207809.81489513407,
+        "pred_ret": -0.0009147697399889822,
+        "position": "FLAT",
+        "status": "scored",
+        "actual_date": "2026-11-13",
+        "actual_close": 206000.0,
+        "actual_ret": -0.009661910911736859,
+        "abs_err_pct": 0.8785509199679952,
+        "naive_abs_err_pct": 0.970873786407767,
+        "direction_hit": true,
+        "position_pnl_pct": -0.0
+      },
+      {
+        "run_at": "2026-11-12T17:45:39.113412+00:00",
+        "ticker": "035420.KS",
+        "exchange": "KRX",
+        "base_date": "2026-11-12",
+        "base_close": 181800.0,
+        "target_session": "2026-11-13",
+        "pred_close": 180346.35911521123,
+        "pred_ret": -0.008027962481105969,
+        "position": "FLAT",
+        "status": "scored",
+        "actual_date": "2026-11-13",
+        "actual_close": 172500.0,
+        "actual_ret": -0.05250994527196402,
+        "abs_err_pct": 4.5486139798325995,
+        "naive_abs_err_pct": 5.391304347826087,
+        "direction_hit": true,
+        "position_pnl_pct": -0.0
+      },
+      {
+        "run_at": "2026-11-12T17:45:39.113412+00:00",
+        "ticker": "035720.KS",
+        "exchange": "KRX",
+        "base_date": "2026-11-12",
+        "base_close": 31700.0,
+        "target_session": "2026-11-13",
+        "pred_close": 31655.820231218993,
+        "pred_ret": -0.001394655637976524,
+        "position": "FLAT",
+        "status": "scored",
+        "actual_date": "2026-11-13",
+        "actual_close": 31700.0,
+        "actual_ret": 0.0,
+        "abs_err_pct": 0.13936835577604642,
+        "naive_abs_err_pct": 0.0,
+        "direction_hit": false,
+        "position_pnl_pct": 0.0
+      },
+      {
+        "run_at": "2026-11-12T17:45:39.113412+00:00",
+        "ticker": "0700.HK",
+        "exchange": "HKEX",
+        "base_date": "2026-11-12",
+        "base_close": 398.8,
+        "target_session": "2026-11-13",
+        "pred_close": 398.18547556975176,
+        "pred_ret": -0.0015421223369081784,
+        "position": "FLAT",
+        "status": "scored",
+        "actual_date": "2026-11-13",
+        "actual_close": 386.6,
+        "actual_ret": -0.031069471313452706,
+        "abs_err_pct": 2.9967603646538374,
+        "naive_abs_err_pct": 3.155716502845315,
+        "direction_hit": true,
+        "position_pnl_pct": -0.0
+      },
+      {
+        "run_at": "2026-11-12T17:45:39.113412+00:00",
+        "ticker": "1211.HK",
+        "exchange": "HKEX",
+        "base_date": "2026-11-12",
+        "base_close": 67.55,
+        "target_session": "2026-11-13",
+        "pred_close": 67.48563125672983,
+        "pred_ret": -0.0009533594584848052,
+        "position": "FLAT",
+        "status": "scored",
+        "actual_date": "2026-11-13",
+        "actual_close": 65.0,
+        "actual_ret": -0.03848079451057071,
+        "abs_err_pct": 3.8240480872766645,
+        "naive_abs_err_pct": 3.923076923076919,
+        "direction_hit": true,
+        "position_pnl_pct": -0.0
+      },
+      {
+        "run_at": "2026-11-12T17:45:39.113412+00:00",
+        "ticker": "1810.HK",
+        "exchange": "HKEX",
+        "base_date": "2026-11-12",
+        "base_close": 29.98,
+        "target_session": "2026-11-13",
+        "pred_close": 29.94340494777901,
+        "pred_ret": -0.0012213944385260655,
+        "position": "FLAT",
+        "status": "scored",
+        "actual_date": "2026-11-13",
+        "actual_close": 28.86,
+        "actual_ret": -0.03807393932872687,
+        "abs_err_pct": 3.754001898056164,
+        "naive_abs_err_pct": 3.8808038808038843,
+        "direction_hit": true,
+        "position_pnl_pct": -0.0
+      },
+      {
+        "run_at": "2026-11-12T17:45:39.113412+00:00",
+        "ticker": "3690.HK",
+        "exchange": "HKEX",
+        "base_date": "2026-11-12",
+        "base_close": 72.1,
+        "target_session": "2026-11-13",
+        "pred_close": 71.82546279430616,
+        "pred_ret": -0.0038149960866681004,
+        "position": "FLAT",
+        "status": "scored",
+        "actual_date": "2026-11-13",
+        "actual_close": 69.8,
+        "actual_ret": -0.032420034522576587,
+        "abs_err_pct": 2.9018091608970846,
+        "naive_abs_err_pct": 3.2951289398280763,
+        "direction_hit": true,
+        "position_pnl_pct": -0.0
+      },
+      {
+        "run_at": "2026-11-12T17:45:39.113412+00:00",
+        "ticker": "9988.HK",
+        "exchange": "HKEX",
+        "base_date": "2026-11-12",
+        "base_close": 93.8,
+        "target_session": "2026-11-13",
+        "pred_close": 93.64349726427729,
+        "pred_ret": -0.001669866112973352,
+        "position": "FLAT",
+        "status": "scored",
+        "actual_date": "2026-11-13",
+        "actual_close": 90.55,
+        "actual_ret": -0.03526267168275662,
+        "abs_err_pct": 3.4163415397871777,
+        "naive_abs_err_pct": 3.5891772501380452,
+        "direction_hit": true,
+        "position_pnl_pct": -0.0
+      },
       {
         "run_at": "2026-11-11T17:28:55.417749+00:00",
         "ticker": "000660.KS",
@@ -3057,16 +3245,16 @@
         "position_pnl_pct": -0.28639929052148344
       }
     ],
-    "sessions": 3,
-    "direction_hit_pct": 50.0,
-    "mae_pct": 2.246198555089659,
-    "naive_mae_pct": 2.027096097942958,
-    "trades": 4,
-    "avg_trade_pnl_pct": -2.2541362135478242
+    "sessions": 4,
+    "direction_hit_pct": 55.00000000000001,
+    "mae_pct": 2.3790554833225537,
+    "naive_mae_pct": 2.2314284277739698,
+    "trades": 5,
+    "avg_trade_pnl_pct": -2.0271919057013137
   },
   "analyst": "template",
   "briefs": {
-    "KRX": "Breadth: 2 bullish, 0 bearish, 3 neutral of 5 names. Most bullish 005930.KS (+0.10), least bullish 035420.KS (+0.00); the loudest board is 000660.KS with 43,027 posts. Out of sample the sentiment model's price error is 3.28% vs 2.85% for a random walk over 5 sessions, so it does not beat the naive baseline; weight the forecast lightly.",
-    "HKEX": "Breadth: 2 bullish, 0 bearish, 3 neutral of 5 names. Most bullish 1810.HK (+0.21), most bearish 9988.HK (-0.02); the loudest board is 3690.HK with 131 posts. Out of sample the sentiment model's price error is 2.54% vs 2.11% for a random walk over 5 sessions, so it does not beat the naive baseline; weight the forecast lightly."
+    "KRX": "Breadth: 1 bullish, 0 bearish, 4 neutral of 5 names. Most bullish 035720.KS (+0.12), most bearish 000660.KS (-0.00); the loudest board is 000660.KS with 43,685 posts. Out of sample the sentiment model's price error is 2.28% vs 2.21% for a random walk over 5 sessions, so it does not beat the naive baseline; weight the forecast lightly.",
+    "HKEX": "Breadth: 1 bullish, 0 bearish, 4 neutral of 5 names. Most bullish 1810.HK (+0.21), most bearish 9988.HK (-0.04); the loudest board is 3690.HK with 134 posts. Out of sample the sentiment model's price error is 2.49% vs 2.36% for a random walk over 5 sessions, so it does not beat the naive baseline; weight the forecast lightly."
   }
 }
