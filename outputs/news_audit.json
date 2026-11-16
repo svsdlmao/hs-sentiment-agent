@@ -3,140 +3,140 @@
     "provider": "exa",
     "ticker": "0700.HK",
     "query": "Tencent Holdings (0700.HK) stock news",
-    "request_id": "3e8680e3d58da05fe0056416c26919ef",
+    "request_id": "97d5689aff65c4c97dd2b02a5798fbaa",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "0700.HK",
     "query": "騰訊 股價",
-    "request_id": "7808c2cad2e9d4b8c31248d311df6200",
+    "request_id": "fcddb42acef338c3be4f83187d55701b",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "9988.HK",
     "query": "Alibaba Group (9988.HK) stock news",
-    "request_id": "1518c663703ef78fce252b56211b673e",
+    "request_id": "dd885e9cea96de5d47c268e1d61fa0f6",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "9988.HK",
     "query": "阿里巴巴 股價",
-    "request_id": "742077efd7d4efdf5ac47ff23e780d66",
+    "request_id": "f77566c0bfc66631459ac4690436b17c",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "1810.HK",
     "query": "Xiaomi Corp (1810.HK) stock news",
-    "request_id": "3f5384ee3cc4b7296e8440da4f2e543a",
+    "request_id": "afa325901cee8d58df48f4d8e8693c57",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "1810.HK",
     "query": "小米 股價",
-    "request_id": "a4267fb6964a00dd549d9acd51d1ad26",
+    "request_id": "dd0fb285150f42871f7447ae1d1a082e",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "3690.HK",
     "query": "Meituan (3690.HK) stock news",
-    "request_id": "390d447fb31def94eb8ef4c3f735df5f",
+    "request_id": "3b21b60d7e680ef6da94613f42b08fcc",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "3690.HK",
     "query": "美團 股價",
-    "request_id": "2e62dcdd5b9c5ad30a6cfcff06b2b0ae",
+    "request_id": "a37c984f0a8fb3b96e2fdd8fb22d59ad",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "1211.HK",
     "query": "BYD Company (1211.HK) stock news",
-    "request_id": "181aadcbfbb1dbe3c84be457a5123d2d",
+    "request_id": "312971cc3c0aafd91df18a2149af70d0",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "1211.HK",
     "query": "比亞迪 股價",
-    "request_id": "47d8b9e2296b61b406eae84758ab0f59",
+    "request_id": "3707a1be9c5f337921c4671586dec276",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "005930.KS",
     "query": "Samsung Electronics (005930.KS) stock news",
-    "request_id": "b8649b2e21b13ff5d6bf249ec12ef06c",
+    "request_id": "7f355bf436d0d4758af54386098a456b",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "005930.KS",
     "query": "삼성전자 주가",
-    "request_id": "687feba733427fe1c41fa33eaf0fa0b0",
+    "request_id": "336e8b978a5fd5fe98b214432440d06d",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "000660.KS",
     "query": "SK hynix (000660.KS) stock news",
-    "request_id": "520627f22618204afcb21f117cd9af4c",
+    "request_id": "7266cd2cf3a36dce142d3f2be14d960d",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "000660.KS",
     "query": "하이닉스 주가",
-    "request_id": "c692a7455abce938fc752fd55630a5ff",
+    "request_id": "f50793ffa056e00408f9cebbf2c9dcb4",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "035420.KS",
     "query": "NAVER Corp (035420.KS) stock news",
-    "request_id": "6d72812dc188458419d4696aa475eef8",
+    "request_id": "9f6f03b0896b8795362f8e406bcd17a9",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "035420.KS",
     "query": "네이버 주가",
-    "request_id": "d1403d686dd52e106f7eafa7b853ad75",
+    "request_id": "b21df59db4b886dea673d74152026c81",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "035720.KS",
     "query": "Kakao Corp (035720.KS) stock news",
-    "request_id": "c7b1a51d3a62b573cfde9a64c887947a",
+    "request_id": "e48915874a2416910587b356e79d1f50",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "035720.KS",
     "query": "카카오 주가",
-    "request_id": "9ac3ca2c4cb420b7d7d81e03567e219a",
+    "request_id": "87fd34c895634e3c392dbe5715454372",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "005380.KS",
     "query": "Hyundai Motor (005380.KS) stock news",
-    "request_id": "745f218e96537ebc502d5564fe4b8270",
+    "request_id": "2db50fc9c42866bd2d91db888d3980c9",
     "results": 12
   },
   {
     "provider": "exa",
     "ticker": "005380.KS",
     "query": "현대차 주가",
-    "request_id": "fd4a6d5a5eb4501bd70fb4e932a73776",
+    "request_id": "e737f7837ac6975c232f4f7d75f9b658",
     "results": 12
   }
 ]
